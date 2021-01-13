@@ -4,7 +4,7 @@ description: 'Your daily tech snack'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
-disqus: 'demowebsite'
+disqus: 'techmunching'
 email: 'techmunching@gmail.com'
 mailchimp-list: ''
 
