@@ -3,7 +3,7 @@ body {
 	padding-top:69.75px;
 }
 .site-content {
-	margin-top:30px;
+	margin-top:60px;
 	min-height:400px;
 }
 .remove-site-content-margin {
@@ -629,6 +629,12 @@ ol.list-featured li:before {
     line-height: 1;
     opacity: .1;
 }
+
+.catlist {
+	font-style: italic;
+	font-weight: bold;
+}
+
 .catlist .sep:last-child {
 	display:none;
 }
@@ -639,6 +645,8 @@ footer {
 }
 .sticky-top-offset {
 	top:70px;
+	background-color: rgb(250, 250, 250);
+    padding: 5%;
 }
 .homefirstpage .main-loop .main-loop-card:nth-child(-n+5) {
 	display:none !important;

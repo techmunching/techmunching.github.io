@@ -1,8 +1,8 @@
 # Site
 name: 'Tech Munching'
 description: 'Your daily tech snack'
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+logo: '/assets/images/logo.png'
+favicon: 'assets/images/logo.png'
 baseurl: ''
 disqus: 'techmunching'
 email: 'techmunching@gmail.com'
@@ -19,13 +19,13 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-    sal:
-      name:           Tech Guru
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar1.jpg
-      bio:            "Hi, I am tech guru. I hope you like it!"
+    admin:
+      name:           Tech Munching
+      site:           https://www.techmunching.com
+      avatar:         /assets/images/logo.png
+      bio:            "Hi, We are Tech Munching. We hope you love it!"
       email:          techmunching@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
+      twitter:        https://twitter.com/techmunching
  
 # Defaults
 defaults:
@@ -35,8 +35,8 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: sal
-      avatar: /assets/images/avatar1.jpg
+      author: "TechMunching"
+      avatar: /assets/images/logo.png
       
   # all pages
   - scope:
