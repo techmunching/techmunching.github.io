@@ -4,6 +4,7 @@ title:	"Unnamed anonymous namespaces vs namespace static"
 date:	2019-11-10
 categories: [ 'Git' ]
 image: img/0*Z2Qy5Q3HZhjjy6Bx
+author: admin
 ---
 
   Detailed Comparison of unnamed namespaces and namespace static with advantages and disadvantages   ![](/img/0*Z2Qy5Q3HZhjjy6Bx)Photo by [Jens Lelie](https://unsplash.com/@leliejens?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)### Table of Contents

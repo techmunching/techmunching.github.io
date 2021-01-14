@@ -4,6 +4,7 @@ title:	"Few Modern C++ Puzzles"
 date:	2020-06-15
 categories: [ 'C++', 'C++20' ]
 image: img/0*3StcFi7Mii7eFJOZ.png
+author: admin
 ---
 
   Some puzzles from various talks, blog posts, and other bits

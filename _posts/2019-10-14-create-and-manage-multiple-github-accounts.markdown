@@ -4,6 +4,7 @@ title:	"Create and manage multiple GitHub accounts"
 date:	2019-10-14
 categories: [ 'Git' ]
 image: 'img/1*kkcqnMF8wuVE-GaXT-r1Gg.jpeg'
+author: admin
 ---
 
   Managing personal and professional Github Account simultaneously

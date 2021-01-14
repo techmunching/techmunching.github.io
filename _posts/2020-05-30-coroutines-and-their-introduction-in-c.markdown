@@ -5,6 +5,7 @@ date:	2020-05-30
 categories: [ 'C++', 'C++20' ]
 image: img/0*qg0kAy5Zjb9DiXaU.jpeg
 tags: [ featured ]
+author: admin
 ---
 
   Let’s discuss what coroutines are in general and how C++20 is introducing them

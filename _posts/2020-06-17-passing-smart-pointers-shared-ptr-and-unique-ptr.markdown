@@ -4,6 +4,7 @@ title:	"Passing smart pointers shared_ptr and unique_ptr"
 date:	2020-06-17
 categories: [ 'C++' ]
 image: img/0*MKKxnMeiF8CTX0zm
+author: admin
 ---
 
   General guidelines to follow for passing shared\_ptr and unique\_ptr as function arguments and at the time of return.

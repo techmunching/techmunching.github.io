@@ -4,6 +4,7 @@ title:	"Move Semantics in C++ : Part 1"
 date:	2020-03-22
 categories: [ 'C++', 'Interview Preparation' ]
 image: 'img/0*TbvZrhoMfgtPAsaa.png'
+author: admin
 ---
 
   **Prerequisites**: [Understanding of rvalue references](https://medium.com/pranayaggarwal25/rvalue-references-e99dfd3933ff)

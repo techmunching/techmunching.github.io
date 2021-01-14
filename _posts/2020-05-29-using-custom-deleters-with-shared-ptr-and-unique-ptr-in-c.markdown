@@ -4,6 +4,7 @@ title:	"Using custom deleters with shared_ptr and unique_ptr in C++"
 date:	2020-05-29
 categories: [ 'C++' ]
 image: img/0*doMK1rnrcwhJmTks
+author: admin
 ---
 
   How to use a custom deleter with an unique\_ptr and shared\_ptr

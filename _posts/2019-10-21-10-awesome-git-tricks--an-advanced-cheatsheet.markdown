@@ -4,6 +4,7 @@ title:	"10 Awesome Git Tricks: An advanced cheatsheet"
 date:	2019-10-21
 categories: [ 'Git' ]
 image: 'img/0*wASU3bLLfLP3ve7L'
+author: admin
 ---
 
   Commit, Branching, Refs, Checkouts, push and pulls

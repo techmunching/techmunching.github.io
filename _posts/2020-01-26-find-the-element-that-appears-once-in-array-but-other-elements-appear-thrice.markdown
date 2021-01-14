@@ -5,6 +5,7 @@ date:	2020-01-26
 categories: [ 'Algorithm', 'Interview Preparation' ]
 image: 'img/0*CYH--jxfZ8bQGcXj.png'
 tags: [ featured ]
+author: admin
 ---
 
   ![](/img/0*CYH--jxfZ8bQGcXj.png)### Problem

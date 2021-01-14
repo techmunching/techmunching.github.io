@@ -4,6 +4,7 @@ title:	"Git merge  vs Git Rebase"
 date:	2019-11-16
 categories: [ 'Git' ]
 image: 'img/0*-ExPwJS4GXXNwbyQ.jpeg'
+author: admin
 ---
 
   Git merge vs rebase vs squash merge strategies. Practical example of why rebase is usually avoided.   A complete discussion about git rebase vs git merge (and squash merge)

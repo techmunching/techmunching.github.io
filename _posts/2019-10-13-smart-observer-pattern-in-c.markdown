@@ -5,6 +5,7 @@ date:	2019-10-13
 categories: [ 'C++' ]
 image: 'img/0*5TpHrNqaemC7yh-U'
 tags: [ featured ]
+author: admin
 ---
 
   smarter pub-sub A better event dispatcher

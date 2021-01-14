@@ -5,6 +5,7 @@ date:	2019-10-12
 categories: [ 'C++' ]
 image: 'img/1*C4SOhNW1GC5SBLMXBwZv0g.png'
 tags: [ featured ]
+author: admin
 ---
 
   make\_shared vs shared\_ptr

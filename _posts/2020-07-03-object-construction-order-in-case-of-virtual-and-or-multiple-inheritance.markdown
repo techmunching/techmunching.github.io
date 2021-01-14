@@ -4,6 +4,7 @@ title:	"Object construction order in case of virtual and/or multiple inheritance
 date:	2020-07-03
 categories: [ 'C++', 'OOPS' ]
 image: img/0*VtNlssb8zTqF0nY9.gif
+author: admin
 ---
 
   How virtual vs. multiple inheritance affect class object construction order?

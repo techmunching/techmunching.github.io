@@ -5,6 +5,7 @@ date:	2020-04-07
 categories: [ 'C++', 'Interview Preparation' ]
 image: 'img/1*e5WJhg2seFQhG4vGd65yeQ.jpeg'
 tags: [ featured ]
+author: admin
 ---
 
   ![](/img/1*e5WJhg2seFQhG4vGd65yeQ.jpeg)rvalue references### Contents

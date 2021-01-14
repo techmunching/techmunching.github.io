@@ -4,6 +4,7 @@ title:	"Using Modern C++ class members and initializations the right way"
 date:	2020-07-03
 categories: [ 'C++' ]
 image: img/0*csRd0YjayeNTl96F.jpg
+author: admin
 ---
 
   Using In-member initialization, using constructors smartly and using class members functions in a safe and proper way to avoid mistakes

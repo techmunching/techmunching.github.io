@@ -4,6 +4,7 @@ title:	"Universal Reference and Perfect forwarding"
 date:	2020-04-11
 categories: [ 'C++' ]
 image: img/0*wi8CKG57G8q3-woE.gif
+author: admin
 ---
 
   **Also known as Forwarding reference**
