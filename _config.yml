@@ -6,7 +6,7 @@ favicon: 'assets/images/logo.png'
 baseurl: ''
 disqus: 'techmunching'
 email: 'techmunching@gmail.com'
-mailchimp-list: ''
+mailchimp-list: 'https://tinyletter.com/TechMunching'
 
 include: ["_pages"]
 permalink: /:title/

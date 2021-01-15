@@ -81,7 +81,7 @@ layout: default
  
             <!-- Mailchimp Subscribe Form -->
             {% if site.mailchimp-list %}
-			<div class="border p-5 bg-lightblue">
+			<!-- <div class="border p-5 bg-lightblue">
 				<div class="row justify-content-between">
 					<div class="col-md-6 mb-2 mb-md-0">
 						<h5 class="font-weight-bold">Join Newsletter</h5>
@@ -102,7 +102,15 @@ layout: default
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
+			<form style="border:1px solid #ccc;padding:3px;text-align:center;"
+				action="https://tinyletter.com/TechMunching" method="post" target="popupwindow"
+				onsubmit="window.open('https://tinyletter.com/TechMunching', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+				<p><label for="tlemail">Enter your email address</label></p>
+				<p><input type="text" style="width:140px" name="email" id="tlemail" /></p>
+				<input type="hidden" value="1"name="embed" /><input type="submit" value="Subscribe" />
+				<p><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p>
+			</form>
             {% endif %}
             
             
