@@ -59,7 +59,7 @@ A lambda expression **specifies an object, not just a function without a name,**
 ***
 ### What are closures
 
-\* What is C++ specific part here
+**\* What is C++ specific part here**
 
 *A closure is a general concept in programming that originated from functional programming. When we talk about the closures in C++, they always come with lambda expressions.   
 In any other language like Python, closure are unrelated to Lambdas* 😊
