@@ -17,12 +17,13 @@ author: admin
 4. Lambdas vs. Closures
 5. Distinction by Examples
 6. Close analog to a closure
+
 ***
 ### Just your everyday functions
 
 When most people think of *functions*, they think of **named functions** such as -
 
-```
+```cpp
 std::string a_named_function () { 
     return "This string is returned from a named function"; 
 }
@@ -31,9 +32,10 @@ std::string a_named_function () {
 
 These are called by name, of course:
 
-```
+```cpp
 foo(); //returns the string above
 ```
+
 ***
 ### Lambda Expressions
 
@@ -63,6 +65,7 @@ A lambda expression **specifies an object, not just a function without a name,**
 In any other language like Python, closure are unrelated to Lambdas* 😊
 
 A ***closure*** is any function that ***closes over*** the ***environment*** in which it was defined. This means that it can access variables not in its parameter list.
+
 ***
 #### What is a Closure anyway in C++?
 
@@ -75,6 +78,7 @@ So closure is an anonymous function object that is created automatically by the 
 > The runtime effect of a lambda expression is the generation of an object. Such objects are known as *closures*.
 
 A closure is a function that encloses its surrounding state by referencing fields external to its body. The enclosed state remains across invocations of the closure
+
 ***
 ### Lambdas vs. Closures
 
@@ -90,12 +94,13 @@ As we know, a class exists only in source code; it doesn’t exist at runtime. W
 
 1. Lambdas occupy no data memory at runtime, for example, though they may occupy code memory.
 2. Closures occupy data memory, but not code memory.
+
 ***
 ### Distinction by Examples
 
 Let’s take an example —
 
-```
+```cpp
 auto f = [&](int x, int y) { return fudgeFactor * (x + y); };
 
 // the expression to the right of the "=" is the lambda expression (i.e., "the lambda"), 
@@ -111,7 +116,7 @@ The process of copying the closure into f may be optimized into a move but that 
 
 The actual closure object is a temporary that's typically destroyed at the end of the statement unless you bind it to a [forwarding reference(a.ka. Universal reference)](https://medium.com/pranayaggarwal25/universal-reference-perfect-forwarding-5664514cacf9) or lvalue-reference-to-`const`.
 
-```
+```cpp
 //===============================================================//
 
 auto&& rrefToClosure = [&](int x, int y) { return fudgeFactor * (x + y); };
@@ -122,7 +127,7 @@ const auto& lrefToConstToClosure = [&](int x, int y) { return fudgeFactor * (x +
 ```
 Let’s take another example —
 
-```
+```cpp
 //===============================================================//
 
 std::function<void(void)> closureWrapper1()
@@ -151,6 +156,7 @@ int main()
 ### Close analog to a closure
 
 **Function Object (Functor)** — Function object overload the operator(). It could capture the values by making a copy of the variables to its member variables. The shortcoming is that for each different function call, regardless of how simple it is, we would have to implement a new class, whereas implementing a lambda expression is faster.
+
 ***
 ### References
 
@@ -160,7 +166,7 @@ int main()
 
 ***
 Thanks for reading this article! Feel free to leave your comments and let me know what you think. Please feel free to drop any comments to improve this article. 
- 
+
 Please check out my [other articles](https://medium.com/pranayaggarwal25) and [website](http://pranayaggarwal.github.io/), Have a great day!
 
   
