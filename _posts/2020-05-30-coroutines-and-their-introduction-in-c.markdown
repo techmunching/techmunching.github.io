@@ -113,28 +113,17 @@ If you have used Python, you may know that there is a keyword called yield that 
 
 ## A Python program to generate numbers in a range using yield**def** rangeN(a, b):  
 
-```rb
-def show
-  puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong line"
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-```
+```python
 
-{% highlight cpp %}
- i **=** a ** while** (i < b):  
- **yield** i  
- i **+=** 1 # Next execution resumes from this point**for** i **in** rangeN(1, 5):  
- print(i)// Output  
-1  
-2  
-3  
-4  
-5
-{% endhighlight %}
+# A Python program to generate numbers in a range using yield
+def rangeN(a, b):
+  i = a 
+  while (i < b):
+    yield i
+    i += 1  # Next execution resumes from this point
+for i in rangeN(1, 5):
+  print(i)
+```
 
 ***
 
@@ -143,9 +132,10 @@ end
 To simulate coroutines in traditional C++ is challenging as for every response to a function call, there is a stack being initialized that keeps track of all its variables and constants and gets destroyed when the function call ends.
 
 For the same range example, to simulate a simple switch coroutine suspend-resume we can do something like —
-```
-**// A bad simulation of coroutine, no state saving  
-**#include<iostream>int range(int a, int b)   
+```cpp
+// A bad simulation of coroutine, no state saving  
+#include<iostream>
+int range(int a, int b)   
 {   
  static long long int i = a-1;  
  for (;i < b;)   
@@ -153,7 +143,9 @@ For the same range example, to simulate a simple switch coroutine suspend-resume
  return ++i;   
  }   
  return 0;   
-}int main()   
+}
+
+int main()   
 {   
  int i; for (; i=range(1, 5);)   
  std::cout << i << '\n';  
