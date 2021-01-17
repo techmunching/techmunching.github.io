@@ -2,7 +2,7 @@
 layout:	post
 title:	"Largest sub matrix rectangle with rearrangement with all 1s"
 date:	2021-01-17
-categories: [ 'C++' ]
+categories: [ 'C++', 'Algorithm', 'Interview Preparation' ]
 image: 'img/bricks.png'
 author: admin
 ---
@@ -47,7 +47,10 @@ Here are the height of the building for each row:
 | Row 2 |      1 |      1 |      2 | (Previous floor adds up in coloumn 3)
 | Row 3 |      2 |      0 |      3 | (Ground floor in coloumn 2 nullifies previous height) 
 
-<br/> Since, we can actually move the coloumns, above rows after sorting can be represented as:
+<br/>
+![](/img/200117-row3.png)
+
+Since, we can actually move the coloumns, above rows after sorting can be represented as:
 
 |       | Col 1  | Col 2  | Col 3  |
 | ----- |:------:|:------:|:------:|
@@ -55,7 +58,10 @@ Here are the height of the building for each row:
 | Row 2 |      2 |      1 |      1 | 
 | Row 3 |      3 |      2 |      0 | 
 
-<br/>Once you reach this state, finding the max rectangles for each building is height * width. 
+<br/>
+![](/img/200117-row31.png)
+
+Once you reach this state, finding the max rectangles for each building is height * width. 
 
 For example:
 
