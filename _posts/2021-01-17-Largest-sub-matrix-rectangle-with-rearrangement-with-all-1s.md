@@ -37,17 +37,17 @@ The largest submatrix of 1s, in bold, has an area of 4.
 
 > Not to console the audience reading it after the contest, however, this wasn't necessarily a `medium` problem. *As with life, this problem also has multiple solutions to it*. So, please comment down in case you would need further solutions based on DP or so.
 
-Let's try to look at the problem in a different way, can we think of `value 1` as bricks 🧱 and `value 0` as ground level. Our task is to find the max rectangle with parallel buildings made with these bricks 🧱 and because the columns can be rearranged, we can move the buildings.
+Let's try to look at the problem in a different way, can we think of `value 1` as adding a floor to the building and `value 0` as ground level of the building. Our task is to find the max rectangle with parallel buildings and because the columns can be rearranged, we can move the buildings.
 
-Here are the brick height for each row:
+Here are the height of the building for each row:
 
 |       | Col 1  | Col 2  | Col 3  |
 | ----- |:------:|:------:|:------:|
 | Row 1 |      0 |      0 |      1 |
-| Row 2 |      1 |      1 |      2 | (Previous brick adds up in coloumn 3)
-| Row 3 |      2 |      0 |      3 | (Surface level in coloumn 2 nullifies previous bricks) 
+| Row 2 |      1 |      1 |      2 | (Previous floor adds up in coloumn 3)
+| Row 3 |      2 |      0 |      3 | (Ground floor in coloumn 2 nullifies previous height) 
 
-<br/> Since, we can actually move the coloumns, above rows after sorted can be represented as:
+<br/> Since, we can actually move the coloumns, above rows after sorting can be represented as:
 
 |       | Col 1  | Col 2  | Col 3  |
 | ----- |:------:|:------:|:------:|
@@ -55,7 +55,13 @@ Here are the brick height for each row:
 | Row 2 |      2 |      1 |      1 | 
 | Row 3 |      3 |      2 |      0 | 
 
-<br/>Once you reach this state, you just need to see what's the max block of bricks 🧱. For example, Row 3, our max area would be 2 (height) * 2 (width).
+<br/>Once you reach this state, finding the max rectangles for each building is height * width. 
+
+For example:
+
+Row 3 & Col 1 : 3 (height) * 1 (width)
+
+Row 3 & Col 1 & Col 2 : 2 (height) * 2 (width)
 
 Here is complete solution:
 
