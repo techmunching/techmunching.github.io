@@ -1,5 +1,5 @@
 # Site
-name: 'Tech Munching'
+name: 'TechMunching'
 description: 'Your daily tech snack'
 logo: '/assets/images/logo.png'
 favicon: 'assets/images/logo.png'
@@ -20,7 +20,7 @@ plugins:
   
 authors:
     admin:
-      name:           Tech Munching
+      name:           TechMunching
       site:           https://www.techmunching.com
       avatar:         /assets/images/logo.png
       bio:            "Hi, We are Tech Munching. We hope you love it!"
