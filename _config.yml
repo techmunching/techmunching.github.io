@@ -68,3 +68,4 @@ plugins:
 
 compress_images:
   images_path: "img/**/*"
+  svgo: false
