@@ -61,3 +61,10 @@ exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffe
 
 # Google Analytics
 google_analytics: G-Y7HGWZX785
+
+plugins:
+  - jekyll-compress-images
+
+
+compress_images:
+  images_path: "img/**/*"
