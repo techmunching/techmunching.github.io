@@ -808,3 +808,18 @@ div.a2a_full_footer {display:none;}
 	 }
  }
  
+
+hr {
+	border: none;
+    color: rgb(8, 8, 8);
+    letter-spacing: 0.7em;
+    text-align: center;
+	font-size: 1.2em;
+	margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+hr:before {
+	content: '...';
+}
+  

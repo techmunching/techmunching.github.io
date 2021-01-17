@@ -2,6 +2,11 @@
 layout: default
 ---
 {% assign author = site.authors[page.author] %}
+
+<script>
+$("body").css('visibility', 'hidden');
+</script>
+
 <div class="container">
 <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
 		<div class="h-100 tofront">
@@ -172,3 +177,13 @@ layout: default
         </div>
     </div>
 </div>
+
+<script src="{{site.baseurl}}/assets/js/image-zoom.min.js"></script>
+<script>
+$(".article-post img").attr('data-zoomable', 'true');
+imageZoom({ selector: 'img[data-zoomable="true"]' });
+setTimeout(function(){
+	$("body").css('visibility', 'visible');
+}, 250);
+
+</script>
