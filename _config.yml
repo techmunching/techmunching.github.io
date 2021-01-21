@@ -69,3 +69,7 @@ plugins:
 compress_images:
   images_path: "img/**/*"
   svgo: false
+
+url: "https://techmunching.com" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
