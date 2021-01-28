@@ -9,7 +9,7 @@ author: admin
 
 # No more dealing with slow MacBookPro
 
-![img/throttle_1.gif](img/throttle_1.gif)
+![](/img/throttle_1.gif)
 
 Has it ever happened with you that you are all set to rock the virtual meeting with your presentation and just before sharing your MacBook's screen, it froze? Not your heart but the Laptop, the trackpad isn't anymore in control of the cursor, the fan is on full throttle, yet everything is all slowed down.
 
@@ -27,9 +27,9 @@ Here is what I suggest - Turn on the fan to full throttle and let your fan alway
 
 Here is the snapshot of the settings your need to opt for:
 
-![img/throttle_2.png](img/throttle_2.png)
+![](/img/throttle_2.png)
 
-![img/throttle_3.png](img/throttle_3.png)
+![](/img/throttle_3.png)
 
 I hope it helps my fellow mates.!
 
