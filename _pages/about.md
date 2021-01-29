@@ -4,5 +4,6 @@ layout: page-sidebar
 permalink: "/about.html"
 image: "/assets/images/screenshot.jpg"
 comments: true
+description: "We are Techmunching"
 ---
 Made with <i class="fa fa-heart text-danger"></i> by TechMunching [@wowthemesnet](https://www.wowthemes.net/category/free-themes-templates/).

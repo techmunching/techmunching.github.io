@@ -1,6 +1,7 @@
 ---
 title: "Contact"
 permalink: "/contact.html"
+description: "TechMunching contact Us page"
 ---
 
 <form action="https://formspree.io/f/mleoayka" method="POST">    

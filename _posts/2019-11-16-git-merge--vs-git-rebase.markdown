@@ -1,6 +1,6 @@
 ---
 layout:	post
-title:	"Git merge  vs Git Rebase"
+title:	"Git merge vs Git Rebase"
 date:	2019-11-16
 categories: [ 'Git' ]
 image: 'img/0*-ExPwJS4GXXNwbyQ.jpeg'
