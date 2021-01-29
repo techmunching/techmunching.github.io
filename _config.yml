@@ -49,7 +49,7 @@ markdown: kramdown
 kramdown:
    syntax_highlighter_opts:
       disable : true
-highlighter: none
+# highlighter: rouge 
 
 # Paginate
 paginate: 10
