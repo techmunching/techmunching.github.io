@@ -139,7 +139,7 @@ Use **merge** when:
 1. You have shared some of the changes with others and it’s important not to break their repositories. git rebase changes a lot of history so a normal merge is much safer and cleaner for others.
 2. You care about history and development tracks.
 Thanks for reading this article! Feel free to leave your comments and let me know what you think. Please feel free to drop any comments to improve this article.  
-Please check out my [other articles](https://medium.com/pranayaggarwal25) and [website](http://pranayaggarwal.github.io/), Have a great day!
+Please check out our [other articles](https://techmunching.com) and [website](https://techmunching.com), Have a great day!
 
 ### References
 

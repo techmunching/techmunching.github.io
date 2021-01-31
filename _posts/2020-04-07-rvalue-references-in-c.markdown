@@ -164,6 +164,6 @@ At the place where you intend to move x, you must use std::move manually to move
 2. <https://www.learncpp.com/cpp-tutorial/15-2-rvalue-references/>
 3. <https://www.fluentcpp.com/2018/02/06/understanding-lvalues-rvalues-and-their-references/>
 Thanks for reading this article! Feel free to leave your comments and let me know what you think. Please feel free to drop any comments to improve this article.  
-Please check out my [other articles](https://medium.com/pranayaggarwal25) and [website](http://pranayaggarwal.github.io/), Have a great day!
+Please check out our [other articles](https://techmunching.com) and [website](https://techmunching.com), Have a great day!
 
   

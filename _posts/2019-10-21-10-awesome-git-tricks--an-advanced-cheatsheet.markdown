@@ -95,6 +95,6 @@ git checkout -b <remote\_branch\_name> origin/<remote\_branch\_name>### Referenc
 <https://opensource.com/article/18/4/git-tips>
 
 Thanks for reading this article! Feel free to leave your comments and let me know what you think. Please feel free to drop any comment to improve this article.  
-Please check out my [other articles](https://medium.com/pranayaggarwal25) and [website](http://pranayaggarwal.github.io/) Have a great day!
+Please check out our [other articles](https://techmunching.com) and [website](https://techmunching.com) Have a great day!
 
   

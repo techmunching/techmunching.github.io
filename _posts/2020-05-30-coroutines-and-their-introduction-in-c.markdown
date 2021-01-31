@@ -257,6 +257,6 @@ Every coroutine in C++ has some restrictions noted below. So coroutines —
 3. <https://stackoverflow.com/questions/48106252/why-threads-are-showing-better-performance-than-coroutines>
 4. <https://www.modernescpp.com/index.php/c-20-coroutines-the-first-overview>
 Thanks for reading this article! Feel free to leave your comments and let me know what you think. Please feel free to drop any comments to improve!!  
-Please check out my [other articles](https://medium.com/pranayaggarwal25) and [website](http://pranayaggarwal.github.io/), Have a great day!
+Please check out our [other articles](https://techmunching.com) and [website](https://techmunching.com), Have a great day!
 
   

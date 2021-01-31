@@ -147,6 +147,6 @@ While the name foo technically has external linkage, it cannot actually be refer
 [**linkage of function with parameter from unnamed namespace**  
 *Thanks for contributing an answer to Stack Overflow! Please be sure to answer the question. Provide details and share…*stackoverflow.com](https://stackoverflow.com/questions/41625435/ "https://stackoverflow.com/questions/41625435/")[](https://stackoverflow.com/questions/41625435/)[**DCL59-CPP. Do not define an unnamed namespace in a header file**  
 *Unnamed namespaces are used to define a namespace that is unique to the translation unit, where the names contained…*wiki.sei.cmu.edu](https://wiki.sei.cmu.edu/confluence/display/cplusplus/DCL59-CPP.+Do+not+define+an+unnamed+namespace+in+a+header+file "https://wiki.sei.cmu.edu/confluence/display/cplusplus/DCL59-CPP.+Do+not+define+an+unnamed+namespace+in+a+header+file")[](https://wiki.sei.cmu.edu/confluence/display/cplusplus/DCL59-CPP.+Do+not+define+an+unnamed+namespace+in+a+header+file)Thanks for reading this article! Feel free to leave your comments and let me know what you think. Please feel free to drop any comments to improve this article.  
-Please check out my [other articles](https://medium.com/pranayaggarwal25) and [website](http://pranayaggarwal.github.io/), Have a great day!
+Please check out our [other articles](https://techmunching.com) and [website](https://techmunching.com), Have a great day!
 
   

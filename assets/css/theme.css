@@ -42,6 +42,11 @@ a.text-dark:hover {
 	z-index:1;
 }
 
+li > a {
+	text-decoration: underline;
+    text-underline-offset: 10%;
+}
+
 div.image-zoom-wrapper + em { 
 	text-align: center;
 	color: rgba(117, 117, 117, 1);
@@ -51,6 +56,11 @@ div.image-zoom-wrapper + em {
     display: block;
 	line-height: 300%;
 	background-color: transparent;
+}
+
+div.image-zoom-wrapper > img { 
+	margin-top: 2%;
+	margin-bottom: 2%
 }
 
 p > em, li > em {
