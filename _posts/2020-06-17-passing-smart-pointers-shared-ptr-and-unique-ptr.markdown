@@ -36,7 +36,7 @@ Now before we go further, I must tell you that **raw pointers aren’t always ba
 
 
 > Don’t pass a smart pointer as a function parameter unless you want to use or manipulate it, such as to share or transfer ownership.
-> **Prefer **passing objects by non-owning raw pointers (*) OR references (&).
+> **Prefer** passing objects by non-owning raw pointers (*) OR references (&).
 
 #### Reason and Example
 

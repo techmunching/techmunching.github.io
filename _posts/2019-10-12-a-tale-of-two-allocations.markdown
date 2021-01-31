@@ -10,7 +10,11 @@ author: admin
 
   make\_shared vs shared\_ptr
 
-make\_shared vs shared\_ptr### Quick Recap:
+<iframe src="https://www.youtube.com/embed/h-U9L67R1jE" width="600" height="375" frameborder="0"></iframe>
+
+***
+
+### Quick Recap:
 
 Just a quick recap, shared pointers work on the concept of ref count, they maintain a separate control block that stores these count.
 

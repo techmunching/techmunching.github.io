@@ -63,7 +63,7 @@ div.image-zoom-wrapper > img {
 	margin-bottom: 2%
 }
 
-p > em, li > em {
+p > em, li > em, h4 > em {
 	font-family: Menlo, Monaco, "Courier New", Courier, monospace;
 	background-color: rgba(242, 242, 242, 1);
 	font-weight: 400;

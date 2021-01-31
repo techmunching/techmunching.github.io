@@ -47,7 +47,7 @@ The following set of rules is applied recursively:-
 #### 1. First comes virtual
 
 First, the most derived class’s constructor calls the constructors of the virtual base class subobjects. The very first constructors to be executed are the virtual base classes anywhere in the hierarchy.   
-Virtual base classes are initialized** In depth-first, left-to-right order.**
+Virtual base classes are initialized **In depth-first, left-to-right order.**
 
 #### 2. Then comes multiple inheritance —
 
