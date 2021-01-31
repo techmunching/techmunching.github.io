@@ -1,6 +1,9 @@
 body {
 	overflow-x:hidden;
 	padding-top:69.75px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	letter-spacing: -0.004em;
 }
 .site-content {
 	margin-top:60px;
@@ -38,6 +41,27 @@ a.text-dark:hover {
 .z-index-1 {
 	z-index:1;
 }
+
+div.image-zoom-wrapper + em { 
+	text-align: center;
+	color: rgba(117, 117, 117, 1);
+	font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 70%;
+    margin: auto;
+    display: block;
+	line-height: 300%;
+	background-color: transparent;
+}
+
+p > em, li > em {
+	font-family: Menlo, Monaco, "Courier New", Courier, monospace;
+	background-color: rgba(242, 242, 242, 1);
+	font-weight: 400;
+    font-size: 75%;
+    padding: 2px 4px;
+    font-style: normal;
+}
+
 @media (max-width:991.98px) {
 	.display-3 {
 		font-size:3.5rem;
@@ -657,8 +681,9 @@ footer {
 }
 article {
 	font-size:20px;
-	line-height:1.86;
-    font-family:Lora;
+	line-height:175%;
+	font-family:Lora;
+	margin: 0 5%;
 }
 .article-headline {
     font-family: Georgia,Times,"Times New Roman",serif;
@@ -696,7 +721,7 @@ article:first-letter {
 article h1,article h2,article h3,article h4,article h5,article h6,article .h1,article .h2,article .h3,article .h4,article .h5,article .h6 {
 	margin-bottom:2rem;
 	margin-top:2rem;
-	font-weight:600;
+	font-weight:500;
 }
 .alertbar {
 	box-shadow:0 -3px 10px 0 rgba(0,0,0,.0785);

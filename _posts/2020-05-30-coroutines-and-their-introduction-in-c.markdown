@@ -10,8 +10,11 @@ author: admin
 
   Let’s discuss what coroutines are in general and how C++20 is introducing them
 
-![](/img/0*qg0kAy5Zjb9DiXaU.jpeg) Table of Contents
+![](/img/0*qg0kAy5Zjb9DiXaU.jpeg)
 
+***
+
+### Table of Contents
 1. Prerequisite Terminology  
 2. What are coroutines?  
 3. Coroutines vs Subroutines?  
@@ -73,11 +76,13 @@ Thus coroutines —
 1. **Actor Model**: They are very useful to implement the actor model of concurrency. Each actor has its own procedures, but they give up control to the central scheduler, which executes them sequentially.
 2. **Generators**: It is useful to implement generators that are targeted for streams particularly input/output and for traversal of data structures.
 3. **Reverse Communication**: They are useful to implement reverse communication which is commonly used in mathematical software, wherein a procedure needs the using process to make a computation.
-**Example 1— **To read a file and parse it while finding (matching) some meaningful data, you can either read step by step at each line, which is fine. You may also load the entire content in memory, which won’t be recommended for large text.
+
+
+**Example 1—**To read a file and parse it while finding (matching) some meaningful data, you can either read step by step at each line, which is fine. You may also load the entire content in memory, which won’t be recommended for large text.
 
 Coroutines are there to throw away the stack concept completely. Stop thinking of one process as the caller and the other as the callee, and start thinking of them as **cooperating equals**.
 
-![](/img/0*DaO1S9QPlS2HOrhA)Execution flow for reading a file and finding text
+![](/img/0*DaO1S9QPlS2HOrhA)*Execution flow for reading a file and finding text*
 
 **Example 2 —**You have a consumer-producer relationship where one routine creates items and adds them to a queue and another removes items from the queue and uses them. For reasons of efficiency, you want to add and remove several items at once. The pseudo-code might look like this:
 <pre>
@@ -111,8 +116,6 @@ Coroutines are there to throw away the stack concept completely. Stop thinking o
 
 If you have used Python, you may know that there is a keyword called yield that allows loop back and forth between the caller and the called function until the caller is not done with function or the function terminates because of some logic it is given.
 
-## A Python program to generate numbers in a range using yield**def** rangeN(a, b):  
-
 ```python
 
 # A Python program to generate numbers in a range using yield
@@ -137,42 +140,51 @@ For the same range example, to simulate a simple switch coroutine suspend-resume
 #include<iostream>
 int range(int a, int b)   
 {   
- static long long int i = a-1;  
- for (;i < b;)   
- {   
- return ++i;   
- }   
- return 0;   
+  static long long int i = a-1;  
+  for (;i < b;)   
+  {   
+    return ++i;   
+  }   
+  return 0;   
 }
 
 int main()   
 {   
- int i; for (; i=range(1, 5);)   
- std::cout << i << '\n';  
- return 0;   
+  int i; 
+  for (; i=range(1, 5);)   
+    std::cout << i << '\n';  
+  
+  return 0;   
 }
 ```
 However, this doesn’t hold good for coroutines criteria of saving/resuming from the saved state :(
 
-```
-**// A better simulation of coroutine, state saving!!  
-**#include<iostream>int range(int a, int b)   
-{   
- **static** **long** **long** **int** i;  
- **static** **int** state = 0;** switch** (state)  
- {  
- **case** 0: /* start of function */  
- state = 1;** for** (i = a; i < b; i++)  
- {  
- **return** i; **/* Returns control */**** case** 1:; **/* resume control straight after the return */** }  
- }  
- state = 0;  
- return 0;  
-}int main()   
-{   
- int i;for (; i=range(1, 5);)   
- std::cout << i << '\n';  
- return 0;   
+```cpp
+// A better simulation of coroutine, state saving!!  
+#include<iostream>int range(int a, int b)
+
+{
+  static long long int i;
+  static int state = 0;
+  switch (state) {
+  case 0:
+    /* start of function */
+    state = 1;
+    for (i = a; i < b; i++) {
+      return i; /* Returns control */
+
+      case 1: ; /* resume control straight after the return */
+    }
+  }
+  state = 0;
+  return 0;
+}
+
+int main() {
+  int i;
+  for (; i = range(1, 5);)
+    std::cout << i << '\n';
+  return 0;
 }
 ```
 
@@ -182,40 +194,42 @@ However, this doesn’t hold good for coroutines criteria of saving/resuming fro
 
 In c++20, coroutines are coming. A function is a coroutine if its definition does any of the following:
 
-* uses the co\_awaitoperator to suspend execution until resumed.
-* uses the keyword co\_yield to suspend execution returning a value.
-* uses the keyword co\_return to complete execution.
+* uses the *co\_await* operator to suspend execution until resumed.
+* uses the keyword *co\_yield* to suspend execution returning a value.
+* uses the keyword *co\_return* to complete execution.
 Let’s take a similar example to get a range.
 
 For the simplicity of this post, let’s assume a generator template is something that exists already and can be used to generate a range,
 
 (This blog post from Microsoft [*https://docs.microsoft.com/en-us/archive/msdn-magazine/2017/october/c-from-algorithms-to-coroutines-in-c*](https://docs.microsoft.com/en-us/archive/msdn-magazine/2017/october/c-from-algorithms-to-coroutines-in-c) is amazing regarding the generator pattern details)
 
-```
-#include <iostream>  
-#include <vector> **// Coroutine gets called on need** generator<**int**> generateNumbers(**int** begin, **int** inc = 1) {  
-   
- **for** (**int** i = begin;; i += inc) {  
- co\_yield i;  
- }  
-   
-}  
-  
-**int** main() {  
-  
- std::cout << std::endl;  
-  
- **const** **auto** numbers= generateNumbers(-10);   
-   
- **for** (**int** i= 1; i <= 20; ++i)   
- std::cout << numbers << " "; ***// Runs finite = 20 times***  
-   
-   
- **for** (**auto** n: generateNumbers(0, 5)) **// Runs infinite times**  
- std::cout << n << " "; *// (3)*  
-  
- std::cout << "**\n\n**";  
-  
+```cpp
+#include <iostream>
+
+#include <vector> // Coroutine gets called on need
+
+generator <int> generateNumbers(int begin, int inc = 1) {
+
+  for (int i = begin;; i += inc) {
+    co_yield i;
+  }
+
+}
+
+int main() {
+
+  std::cout << std::endl;
+
+  const auto numbers = generateNumbers(-10);
+
+  for (int i = 1; i<= 20; ++i)
+    std::cout << numbers << " "; // Runs finite = 20 times***  
+
+  for (auto n:generateNumbers(0, 5)) // Runs infinite times**  
+    std::cout << n << " "; // (3)  
+
+  std::cout << "\n\n";
+
 }
 ```
 
@@ -228,9 +242,9 @@ We’ll cover more about coroutines later as it gets better documented and evolv
 Every coroutine in C++ has some restrictions noted below. So coroutines —
 
 1. **Can’t return** with [variadic arguments](https://en.cppreference.com/w/cpp/language/variadic_arguments "cpp/language/variadic arguments")
-2. **Can’t return** using plain “return”
-3. **Can’t return** [placeholder](https://en.cppreference.com/w/cpp/language/function "cpp/language/function") (auto or Concept)
-4. **Can’t be** constexpr functions.
+2. **Can’t return** using plain *return*
+3. **Can’t return** [placeholder](https://en.cppreference.com/w/cpp/language/function "cpp/language/function") (*auto* or *Concept*)
+4. **Can’t be** *constexpr* functions.
 5. **Can’t be** constructors or destructors.
 6. **Can’t be** the main function.
 
