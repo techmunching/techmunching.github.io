@@ -29,10 +29,10 @@ author: admin
 
 ### 1) Refs
 ```
-HEAD^    # 1 commit before head  
-HEAD^^   # 2 commits before head  
-HEAD^^^^ # 4 commits before head  
-HEAD~5   # 5 commits before head
+  HEAD^    # 1 commit before head  
+  HEAD^^   # 2 commits before head  
+  HEAD^^^^ # 4 commits before head  
+  HEAD~5   # 5 commits before head
 ```
 Sample usage: *git show HEAD~2*   
 This will show specified commit’s summary and diff.
@@ -44,10 +44,10 @@ This will show specified commit’s summary and diff.
 To make sure each commit consists of only a single logical change, to divide things up so that each commit contains only the appropriate changes?   
 **git add --patch** to the rescue!!
 ```
-git add -p
-# output will be.....
-# .....<file diff>
-Stage this hunk [y,n,q,a,d,e,?]?
+  git add -p
+  # output will be.....
+  # .....<file diff>
+  Stage this hunk [y,n,q,a,d,e,?]?
 ```
 This flag will cause the **git add** command to look at all the changes in your working copy and, for each one, ask if you'd like to stage it to be committed, skip over it, or defer the decision (as well as a few other more powerful options you can see by selecting after running the command).
 
@@ -59,11 +59,11 @@ Similar to *git add -p*, the *git checkout* command will take a *--patch* or *-p
 
 This is fantastic when, for example, you’ve introduced a bunch of debug logging statements while chasing down a bug. After the bug is fixed, you can use it!
 ```
-git checkout -p # output will be  
-.....  
-.....<file diff>
+  git checkout -p # output will be  
+  .....  
+  .....<file diff>
 
-Discard this hunk from worktree [y,n,q,a,d,e,?]?
+  Discard this hunk from worktree [y,n,q,a,d,e,?]?
 ```
 ***
 
@@ -82,26 +82,26 @@ This is where the following option comes in, it will not allow you to force-push
 
 ### 5) Search in Git logs
 ```
-git log --grep="fixes things" # search in commit messages  
-git log -S"window.alert" # search in code
+  git log --grep="fixes things" # search in commit messages  
+  git log -S"window.alert" # search in code
 ```
 ***
 
 ### 6) Submodules
 ```
-# Import .gitmodules  
- git submodule init# Clone missing submodules, and checkout commits  
- git submodule update --init --recursive# Update remote URLs in .gitmodules  
+  # Import .gitmodules  
+  git submodule init# Clone missing submodules, and checkout commits  
+  git submodule update --init --recursive# Update remote URLs in .gitmodules  
 
-# (Use when you changed remotes in submodules)  
- git submodule update --remote # To override local submodule change  
- git submodule update --remote --force
+  # (Use when you changed remotes in submodules)  
+  git submodule update --remote # To override local submodule change  
+  git submodule update --remote --force
 ```
 ***
 
 ### 7) Empty Commit (to trigger something maybe)
 ```
-git commit --allow-empty -m “Trigger notification”
+  git commit --allow-empty -m “Trigger notification”
 ```
 ***
 ### 8) Better Patches
@@ -119,9 +119,9 @@ The -1 flag tells git how many commits should be included in the patch;
 
 Apply the patch with the command:
 ```shell
-git am < file.patch  
-# OR  
-git apply xyz.patch
+  git am < file.patch  
+  # OR  
+  git apply xyz.patch
 ```
 ***
 
@@ -129,17 +129,18 @@ git apply xyz.patch
 
 Create the branch and checkout:
 ```
-git checkout -b <branch_name>   
-# -b for creating the branch if not exists
+  git checkout -b <branch_name>   
+  # -b for creating the branch if not exists
 ```
 Delete branch locally and on remote
+
 ```
-#Local delete  
-git branch -D <branch_name> # -D for forceful delete, -d for soft
+  #Local delete  
+  git branch -D <branch_name> # -D for forceful delete, -d for soft
 
 
-#Push deletion on remote and thus deleting the remote branch  
-git push <remote_name> --delete <branch_name>
+  #Push deletion on remote and thus deleting the remote branch  
+  git push <remote_name> --delete <branch_name>
 ```
 
 ![](/img/0_jEADYPXfqHA2p14B.png)*Delete remote branch*
@@ -148,8 +149,8 @@ git push <remote_name> --delete <branch_name>
 
 ### 10) Create local origin branch from remote
 ```
-git fetch origin  
-git checkout -b <remote_branch_name> origin/<remote_branch_name>
+  git fetch origin  
+  git checkout -b <remote_branch_name> origin/<remote_branch_name>
 ```
 ***
 
