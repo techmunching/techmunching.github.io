@@ -17,6 +17,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-minifier
   
 authors:
     admin:
@@ -73,3 +74,7 @@ compress_images:
 url: "https://techmunching.com" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
+
+jekyll-minifier:
+  exclude: 'atom.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+
