@@ -7,7 +7,7 @@ image: img/throttle_1.gif
 author: admin
 ---
 
-# Here's another MacBookPro 101 for you!
+# Here's another MacBookPro 101 for you!!
 
 ![](/img/throttle_1.gif)
 
