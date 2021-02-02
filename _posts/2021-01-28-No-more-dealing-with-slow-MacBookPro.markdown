@@ -7,7 +7,7 @@ image: img/throttle_1.gif
 author: admin
 ---
 
-# No more dealing with slow MacBookPro
+# Here's another MacBookPro 101 for you!
 
 ![](/img/throttle_1.gif)
 
