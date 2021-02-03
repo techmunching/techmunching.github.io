@@ -11,7 +11,7 @@ author: admin
 
 ![](/img/1*kkcqnMF8wuVE-GaXT-r1Gg.jpeg)*Managing Git*
 
-Say you have a personal [GitHub](http://github.com/) account, everything is working perfectly fine. For managing the coexistence of your professional account ([enterprise Github](https://github.com/enterprise)) and your personal account, you would need to have the ability to push and pull to multiple accounts.
+Say you have a personal [GitHub](https://github.com/) account, everything is working perfectly fine. For managing the coexistence of your professional account ([enterprise Github](https://github.com/enterprise)) and your personal account, you would need to have the ability to push and pull to multiple accounts.
 
 Let’s see how!
 
@@ -182,6 +182,6 @@ The work repository will require a change to be made with this command:
 ***
 
 Thanks for reading this article! Feel free to leave your comments and let us know what you think. Please feel free to drop any comment to improve this article.  
-Please check out our [other articles](https://techmunching.com) and [website](http://techmunching.com) Have a great day!
+Please check out our [other articles](https://techmunching.com) and [website](https://techmunching.com) Have a great day!
 
   
