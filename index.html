@@ -20,7 +20,19 @@ pagination:
     <div class="col-md-6">
     <div class="card border-0 mb-4 box-shadow">   
     <a href="{{site.baseurl}}{{latest_post.url}}">
+    {% if latest_post.image %}
     <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
+    {% endif %}
+
+    {% if latest_post.video %}
+    <div class="topfirstimage vidWrapper" style="">
+        <video style="max-width:100%" autoplay muted loop>
+            <source src="{% if latest_post.video contains "://" %}{{ latest_post.video }}{% else %} {{site.baseurl}}/{{ latest_post.video}}{% endif %}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+    </div>     
+    {% endif %}
+
     </a>
     <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
     <h1 class="h4 font-weight-bold">
@@ -56,7 +68,16 @@ pagination:
                  <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
                 </a>
                 </div>
-                {% endif %}                
+                {% endif %}  
+
+                {% if second_post.video %}
+                <div class="col-md-4">
+                <a href="{{site.baseurl}}{{second_post.url}}">
+                 <video type="video/mp4" style="max-width:100%" autoplay muted loop class="w-100" src="{% if second_post.video contains "://" %}{{ second_post.video }}{% else %}{{site.baseurl}}/{{ second_post.video }}{% endif %}" alt="{{ second_post.title }}">
+                </a>
+                </div>
+                {% endif %}  
+                          
                 <div>
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{second_post.url}}">{{ second_post.title }}</a>
@@ -83,7 +104,16 @@ pagination:
                  <img class="w-100" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
                 </a>
                 </div>
-                {% endif %}                
+                {% endif %}  
+                
+                {% if third_post.video %}
+                <div class="col-md-4">
+                <a href="{{site.baseurl}}{{third_post.url}}">
+                 <video type="video/mp4" style="max-width:100%" autoplay muted loop class="w-100" src="{% if third_post.video contains "://" %}{{ third_post.video }}{% else %}{{site.baseurl}}/{{ third_post.video }}{% endif %}" alt="{{ third_post.title }}">
+                </a>
+                </div>
+                {% endif %}   
+
                 <div>
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{third_post.url}}">{{ third_post.title }}</a>
@@ -110,7 +140,17 @@ pagination:
                 <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
                 </a>
                 </div>
-                {% endif %}                
+                {% endif %}  
+                
+                {% if fourth_post.video %}
+                <div class="col-md-4">
+                <a href="{{site.baseurl}}{{fourth_post.url}}">
+                 <video type="video/mp4" style="max-width:100%" autoplay muted loop class="w-100" src="{% if fourth_post.video contains "://" %}{{ fourth_post.video }}{% else %}{{site.baseurl}}/{{ fourth_post.video }}{% endif %}" alt="{{ fourth_post.title }}">
+                </a>
+                </div>
+                {% endif %}  
+                          
+
                 <div>
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{fourth_post.url}}">{{ fourth_post.title }}</a>

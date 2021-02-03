@@ -3,14 +3,19 @@ layout:	post
 title:	"No more dealing with slow MacBookPro"
 date:	2021-01-28
 categories: [ 'Productivity' ]
-image: img/throttle_1.gif
+video: img/throttle_1.mp4
 author: admin
 ---
 
 # Here's another MacBookPro 101 for you!!
 
-![](/img/throttle_1.gif)
-
+<!-- ![](/img/throttle_1.gif) -->
+<div class="vidWrapper">
+    <video style="max-width:100%" autoplay muted loop>
+    <source src="/img/throttle_1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+</div>
 Has it ever happened with you that you are all set to rock the virtual meeting with your presentation and just before sharing your MacBook's screen, it froze? Not your heart but the Laptop, the trackpad isn't anymore in control of the cursor, the fan is on full throttle, yet everything is all slowed down.
 
 It's not a hidden fact now that Apple throttles the CPU when your MacBook heats up. While this would have been a bearable scenario if heating up wasn't necessarily an often scenario, but enough applications are running on our system to beat the shit out of it. This is even more common for my fellow developer friends.

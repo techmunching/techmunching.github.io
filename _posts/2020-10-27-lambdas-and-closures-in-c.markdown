@@ -3,15 +3,23 @@ layout:	post
 title:	"Lambdas and closures in C++"
 date:	2020-10-27
 categories: [ 'C++' ]
-image: img/0*PA8-5rLUUze-e0iK.gif
+video: img/0*PA8-5rLUUze-e0iK.mp4
 author: admin
 ---
 
   What are closures vs how lambdas are different from closures?
 
-![](/img/0*PA8-5rLUUze-e0iK.gif)
+<!-- ![](/img/0*PA8-5rLUUze-e0iK.gif) -->
+<div class="vidWrapper">
+<video style="max-width:100%" autoplay muted loop>
+  <source src="/img/0*PA8-5rLUUze-e0iK.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+*They look similar!!*
 
-They look similar!!
+***
+
 ### Table of Contents
 1. Just your everyday functions
 2. Lambda Expressions

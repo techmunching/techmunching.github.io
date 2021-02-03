@@ -3,14 +3,19 @@ layout:	post
 title:	"Object construction order in case of virtual and/or multiple inheritance"
 date:	2020-07-03
 categories: [ 'C++', 'OOPS' ]
-image: img/0*VtNlssb8zTqF0nY9.gif
+video: img/0*VtNlssb8zTqF0nY9.mp4
 author: admin
 ---
 
   How virtual vs. multiple inheritance affect class object construction order?
 
-![](/img/0*VtNlssb8zTqF0nY9.gif)
-
+<!-- ![](/img/0*VtNlssb8zTqF0nY9.gif) -->
+<div class="vidWrapper">
+<video style="max-width:100%" autoplay muted loop>
+  <source src="/img/0*VtNlssb8zTqF0nY9.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
 ***
 
 I’ll try to keep this post short and simple 😊

@@ -24,4 +24,11 @@
 	</a>
 	</div>
 {% endif %}
+{% if post.video %}
+	<div class="col-md-4 pr-0 text-right" style="overflow: hidden;">
+	<a href="{{site.baseurl}}{{post.url}}">
+	<video autoplay muted loop class="w-100" style="height: 125px;" src="{% if post.video contains "://" %}{{ post.video }}{% else %}{{ site.baseurl }}/{{ post.video }}{% endif %}" alt="{{ post.title }}">
+	</a>
+	</div>
+{% endif %}
 </div>

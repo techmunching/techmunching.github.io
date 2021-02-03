@@ -3,15 +3,21 @@ layout:	post
 title:	"Universal Reference and Perfect forwarding"
 date:	2020-04-11
 categories: [ 'C++' ]
-image: img/0*wi8CKG57G8q3-woE.gif
+video: img/0*wi8CKG57G8q3-woE.mp4
 author: admin
 ---
 
   **Also known as Forwarding reference**
 
-![](/img/0*wi8CKG57G8q3-woE.gif)
-
+<!-- ![](/img/0*wi8CKG57G8q3-woE.gif) -->
+<div class="vidWrapper">
+  <video style="max-width:100%" autoplay muted loop>
+    <source src="/img/0*wi8CKG57G8q3-woE.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 ***
+
 **Prerequisites:** [Rvalue references](https://medium.com/pranayaggarwal25/rvalue-references-e99dfd3933ff)
 
 #### Table of Contents:

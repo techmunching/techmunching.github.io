@@ -180,7 +180,13 @@ C++ does not allow types and pointers/references to objects or functions with in
 
 So, in general, a program that uses *static* for its translation-unit-local namespace-level functions generates less work for the linker and might execute faster than the equivalent program using the unnamed namespace.
 
-![](/img/0*EHATWzKSD1maPiFs.gif)
+<!-- ![](/img/0*EHATWzKSD1maPiFs.gif) -->
+<div class="vidWrapper">
+  <video style="max-width:100%" autoplay muted loop>
+    <source src="/img/0*EHATWzKSD1maPiFs.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ***
 

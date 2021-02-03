@@ -56,7 +56,14 @@ How do you check that? Fire up the terminal and a merge commit would look like b
   Merge branch 'master' of github.com:pranayaggarwal/enumifier
 ```
 
-![](/img/0*DHmWhgEMZOSW3OVz.gif)*Sample animation for Explicit git merge*
+<!-- ![](/img/0*DHmWhgEMZOSW3OVz.gif) -->
+<div class="vidWrapper">
+  <video style="max-width:100%" autoplay muted loop>
+    <source src="/img/0*DHmWhgEMZOSW3OVz.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+*Sample animation for Explicit git merge*
 
 #### Pros
 
@@ -76,7 +83,14 @@ How do you check that? Fire up the terminal and a merge commit would look like b
 
 That’s why the implicit merge can be completed without an explicit merge commit: it literally just fast-forwards the branch label to the new commit as shown below.
 
-![](/img/0*GhW5WSCRH1dneU6c.gif)*Sample animation for Implicit git merge*
+<!-- ![](/img/0*GhW5WSCRH1dneU6c.gif) -->
+<div class="vidWrapper">
+  <video style="max-width:100%" autoplay muted loop>
+    <source src="/img/0*GhW5WSCRH1dneU6c.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+*Sample animation for Implicit git merge*
 
 #### Pros
 
@@ -112,9 +126,24 @@ This will create a new “**Merge commit**” in the feature branch that holds t
 
 Rebase is **recreating your work from one branch onto another**.
 
-![](/img/0*JRt9VF_osaAoVwKg.gif)Read this again, slowly: **new commit for every old one, with the same changes**.
+<!-- ![](/img/0*JRt9VF_osaAoVwKg.gif) -->
+<div class="vidWrapper">
+  <video style="max-width:100%" autoplay muted loop>
+    <source src="/img/0*JRt9VF_osaAoVwKg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
-![](/img/0*1VkO0oTn-PPPzJmx.gif)*Sample animation for git rebase*
+Read this again, slowly: **new commit for every old one, with the same changes**.
+
+<!-- ![](/img/0*1VkO0oTn-PPPzJmx.gif) -->
+<div class="vidWrapper">
+  <video style="max-width:100%" autoplay muted loop>
+    <source src="/img/0*1VkO0oTn-PPPzJmx.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+*Sample animation for git rebase*
 
 Used this way, one can indeed apply some commits to master without creating a merge commit. This procedure completely loses the context of where those commits come from, unfortunately.
 
@@ -151,7 +180,14 @@ Rebase the feature branch onto the master branch using the following commands.
 
 A third way to move changes is to *squash* all feature branch’s commits into a single commit before performing an implicit merge *fast-forward* merge or *rebase*.
 
-![](/img/0*0BgII1PmO8JzjnXD.gif)*Sample animation for squash merge*
+<!-- ![](/img/0*0BgII1PmO8JzjnXD.gif) -->
+<div class="vidWrapper">
+  <video style="max-width:100%" autoplay muted loop>
+    <source src="/img/0*0BgII1PmO8JzjnXD.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+*Sample animation for squash merge*
 
 If you use explicit merges this need does not arise because the explicit merge commit allows you to reconstruct what was in the feature branch and its entire evolution.
 
@@ -181,7 +217,8 @@ Consider the case where a dependency that is still in use on feature has been re
 
 This error is only discovered after the *rebase* process is finished, and is usually fixed by applying a new bugfix commit *g* on top.
 
-![](https://cdn-images-1.medium.com/max/800/0*doyGQuGtuXWa3jMF.gif)*Example of failed rebasing*
+![](https://cdn-images-1.medium.com/max/800/0*doyGQuGtuXWa3jMF.gif)
+*Example of failed rebasing*
 
 Even If you do get conflicts during rebasing however, solving conflicts in the middle of rebasing a long chain of commits is often confusing, hard to get right, and another source of potential errors.
 
@@ -191,7 +228,14 @@ This way, new errors are introduced when you rewrite history, and they may disgu
   git bisect run <yourtest.sh>
 ```
 
-![](/img/0*cfutfYn25YFEgBvM.gif)*Example of a failed Git bisect*
+<!-- ![](/img/0*cfutfYn25YFEgBvM.gif) -->
+<div class="vidWrapper">
+  <video style="max-width:100%" autoplay muted loop>
+    <source src="/img/0*cfutfYn25YFEgBvM.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+*Example of a failed Git bisect*
 
 if we’ve introduced additional broken commits during rebasing (here, *d* and *e*), bisect will run into trouble. In this case, we hope that Git identifies the commit *f* as the bad one, but it erroneously identifies dinstead, since it contains some other error that breaks the test.
 
