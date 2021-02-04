@@ -63,13 +63,13 @@ exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffe
 # Google Analytics
 google_analytics: G-Y7HGWZX785
 
-plugins:
-  - jekyll-compress-images
+# plugins:
+#   - jekyll-compress-images
 
 
-compress_images:
-  images_path: "img/**/*"
-  svgo: false
+# compress_images:
+#   images_path: "img/**/*"
+#   svgo: false
 
 url: "https://techmunching.com" # the base hostname & protocol for your site
 plugins:
