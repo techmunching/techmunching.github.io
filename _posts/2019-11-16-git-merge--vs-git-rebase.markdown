@@ -3,13 +3,13 @@ layout:	post
 title:	"Git merge vs Git Rebase"
 date:	2019-11-16
 categories: [ 'Git' ]
-image: 'img/0*-ExPwJS4GXXNwbyQ.jpeg'
+image: 'img/0_-ExPwJS4GXXNwbyQ.webp'
 author: admin
 ---
 
 A complete discussion about git rebase vs git merge (and squash merge)
 
-![](/img/0*-ExPwJS4GXXNwbyQ.jpeg)
+![](/img/0_-ExPwJS4GXXNwbyQ.webp)
 
 ***
 
@@ -105,7 +105,7 @@ That’s why the implicit merge can be completed without an explicit merge commi
 
 In the event that you require a merge commit during a fast forward merge for record-keeping purposes, you can execute git merge with the --no-ffoption.
 
-![](/img/0*6OWQ6E6bT-TmuEvJ.webp)*git merge — no-ff vs git merge*
+![](/img/0_6OWQ6E6bT-TmuEvJ.webp)*git merge — no-ff vs git merge*
 
 Merge the master branch into the feature branch using the checkout and merge commands.
 ```shell

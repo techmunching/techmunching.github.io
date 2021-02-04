@@ -3,14 +3,14 @@ layout:	post
 title:	"Coroutines and their introduction in C++"
 date:	2020-05-30
 categories: [ 'C++', 'C++20' ]
-image: img/0*qg0kAy5Zjb9DiXaU.jpeg
+image: img/0_qg0kAy5Zjb9DiXaU.webp
 tags: [ featured ]
 author: admin
 ---
 
   Let’s discuss what coroutines are in general and how C++20 is introducing them
 
-![](/img/0*qg0kAy5Zjb9DiXaU.jpeg)
+![](/img/0_qg0kAy5Zjb9DiXaU.webp)
 
 ***
 
@@ -49,7 +49,7 @@ This is why coroutines are well-suited for implementing familiar program compone
 * With subroutines, execution begins at the start and finished on exit.
 * Subroutines are special cases of coroutines. Any subroutine can be translated to a coroutine which does not call ‘yield’ (relinquish control).
 * Subroutines only return once and don't hold the complete state between invocations.
-![](/img/0*u8LQUT-o3R32MBgP.jpg)In contrast —
+![](/img/0_u8LQUT-o3R32MBgP.webp)In contrast —
 
 * Coroutines can exit by calling other coroutines, which may later return to the point where they were invoked in the original coroutine; from the coroutine’s point of view, it is actually not exiting but calling another coroutine.
 * A coroutine instance holds state and varies between invocations.

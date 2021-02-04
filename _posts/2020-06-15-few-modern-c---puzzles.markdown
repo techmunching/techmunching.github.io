@@ -3,13 +3,13 @@ layout:	post
 title:	"Few Modern C++ Puzzles"
 date:	2020-06-15
 categories: [ 'C++', 'C++20' ]
-image: img/0*3StcFi7Mii7eFJOZ.png
+image: img/0_3StcFi7Mii7eFJOZ.webp
 author: admin
 ---
 
   Some puzzles from various talks, blog posts, and other bits
 
-![](/img/0*3StcFi7Mii7eFJOZ.webp)
+![](/img/0_3StcFi7Mii7eFJOZ.webp)
 
 ### Table of Contents
 

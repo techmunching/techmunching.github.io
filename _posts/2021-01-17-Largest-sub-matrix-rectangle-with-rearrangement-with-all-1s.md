@@ -3,7 +3,7 @@ layout:	post
 title:	"Largest sub matrix rectangle with rearrangement with all 1s"
 date:	2021-01-17
 categories: [ 'C++', 'Algorithm', 'Interview Preparation' ]
-image: 'img/bricks.png'
+image: 'img/bricks.webp'
 author: admin
 ---
 

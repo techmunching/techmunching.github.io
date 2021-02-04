@@ -73,7 +73,7 @@ No matter how hard as you try to avoid it, sometimes *git push --force* to overw
 
 One of the hazards with force pushes happens when somebody else has made changes on top of the same branch in the remote copy of the repository. When you force-push your rewritten history, those commits will be lost.
 
-![](/img/0*Lqu7mVfSeMU_GGFx.jpg)
+![](/img/0_Lqu7mVfSeMU_GGFx.webp)
 This is where the following option comes in, it will not allow you to force-push if the remote branch has been updated, which will ensure you don't throw away someone else's work. Ain’t it nice?
 
 *git push --force-with-lease*

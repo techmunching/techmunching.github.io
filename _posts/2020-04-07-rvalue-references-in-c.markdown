@@ -3,12 +3,12 @@ layout:	post
 title:	"Rvalue references in C++"
 date:	2020-04-07
 categories: [ 'C++', 'Interview Preparation' ]
-image: 'img/1_e5WJhg2seFQhG4vGd65yeQ.jpeg'
+image: 'img/0_e5WJhg2seFQhG4vGd65yeQ.webp'
 tags: [ featured ]
 author: admin
 ---
 
-  ![](/img/1_e5WJhg2seFQhG4vGd65yeQ.jpeg)*rvalue references*
+  ![](/img/0_e5WJhg2seFQhG4vGd65yeQ.webp)*rvalue references*
   
 ***
 

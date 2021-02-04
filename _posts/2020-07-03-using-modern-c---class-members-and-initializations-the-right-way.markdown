@@ -3,13 +3,13 @@ layout:	post
 title:	"Using Modern C++ class members and initializations the right way"
 date:	2020-07-03
 categories: [ 'C++' ]
-image: img/0*csRd0YjayeNTl96F.jpg
+image: img/0_csRd0YjayeNTl96F.webp
 author: admin
 ---
 
   Using In-member initialization, using constructors smartly and using class members functions in a safe and proper way to avoid mistakes
 
-![](/img/0*csRd0YjayeNTl96F.jpg)Clean code!### Table of Contents
+![](/img/0_csRd0YjayeNTl96F.webp)Clean code!### Table of Contents
 
 1. Use member initializers in the same order as their declaration
 2. Prefer in-class member initializer over constant initializations OR over default constructor.

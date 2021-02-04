@@ -22,7 +22,7 @@ Like instead of this
 
 ```
 ...
-image: 'img/0*-ExPwJS4GXXNwbyQ.jpeg'
+image: 'img/0_-ExPwJS4GXXNwbyQ.webp'
 ...
 ```
 

@@ -3,7 +3,7 @@ layout:	post
 title:	"A tale of two allocations"
 date:	2019-10-12
 categories: [ 'C++' ]
-image: 'img/1_C4SOhNW1GC5SBLMXBwZv0g.png'
+image: 'img/1_C4SOhNW1GC5SBLMXBwZv0g.webp'
 tags: [ featured ]
 author: admin
 ---
