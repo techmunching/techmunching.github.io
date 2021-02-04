@@ -9,7 +9,7 @@ author: admin
 
   **Prerequisites**: [Understanding of rvalue references](https://medium.com/pranayaggarwal25/rvalue-references-e99dfd3933ff)
 
-![Move Semantics](/img/0*TbvZrhoMfgtPAsaa.png)
+![Move Semantics](/img/0*TbvZrhoMfgtPAsaa.webp)
 
 ***
 
@@ -66,7 +66,7 @@ vec = createAndInsert();
 
 ```
 
-![](/img/1*Skf__7ocaqDjgy0NuzonpQ.png)*Final Memory footprint after createAndInsert() function call*
+![](/img/1_Skf__7ocaqDjgy0NuzonpQ.webp)*Final Memory footprint after createAndInsert() function call*
 
 ***
 

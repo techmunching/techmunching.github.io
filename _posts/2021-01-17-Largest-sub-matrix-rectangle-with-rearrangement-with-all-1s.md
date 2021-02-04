@@ -9,7 +9,7 @@ author: admin
 
 We at Tech Munching provide you the cleanest, easy to understand solutions to difficult competitive coding questions. This question #1727 appeared in LeetCode contest #224.
 
-![](/img/bricks.png)
+![](/img/bricks.webp)
 
 ***
 
@@ -48,7 +48,7 @@ Here are the height of the building for each row:
 | Row 3 |      2 |      0 |      3 | (Ground floor in coloumn 2 nullifies previous height) 
 
 <br/>
-![](/img/200117-row3.png)
+![](/img/200117-row3.webp)
 
 Since, we can actually move the coloumns, above rows after sorting can be represented as:
 
@@ -59,7 +59,7 @@ Since, we can actually move the coloumns, above rows after sorting can be repres
 | Row 3 |      3 |      2 |      0 | 
 
 <br/>
-![](/img/200117-row31.png)
+![](/img/200117-row31.webp)
 
 Once you reach this state, finding the max rectangles for each building is height * width. 
 

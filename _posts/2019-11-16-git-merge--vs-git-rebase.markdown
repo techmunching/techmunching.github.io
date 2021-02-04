@@ -105,7 +105,7 @@ That’s why the implicit merge can be completed without an explicit merge commi
 
 In the event that you require a merge commit during a fast forward merge for record-keeping purposes, you can execute git merge with the --no-ffoption.
 
-![](/img/0*6OWQ6E6bT-TmuEvJ.png)*git merge — no-ff vs git merge*
+![](/img/0*6OWQ6E6bT-TmuEvJ.webp)*git merge — no-ff vs git merge*
 
 Merge the master branch into the feature branch using the checkout and merge commands.
 ```shell

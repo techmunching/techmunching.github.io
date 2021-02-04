@@ -32,9 +32,9 @@ Here is what I suggest - Turn on the fan to full throttle and let your fan alway
 
 Here is the snapshot of the settings your need to opt for:
 
-![](/img/throttle_2.png)
+![](/img/throttle_2.webp)
 
-![](/img/throttle_3.png)
+![](/img/throttle_3.webp)
 
 I hope it helps my fellow mates.!
 

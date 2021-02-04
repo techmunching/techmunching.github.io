@@ -53,7 +53,7 @@ This is why coroutines are well-suited for implementing familiar program compone
 
 * Coroutines can exit by calling other coroutines, which may later return to the point where they were invoked in the original coroutine; from the coroutine’s point of view, it is actually not exiting but calling another coroutine.
 * A coroutine instance holds state and varies between invocations.
-![](/img/1*bYDtHHWQDCvDt3XZAkNVoQ.png)
+![](/img/1_bYDtHHWQDCvDt3XZAkNVoQ.webp)
 
 ***
 

@@ -143,7 +143,7 @@ Delete branch locally and on remote
   git push <remote_name> --delete <branch_name>
 ```
 
-![](/img/0_jEADYPXfqHA2p14B.png)*Delete remote branch*
+![](/img/0_jEADYPXfqHA2p14B.webp)*Delete remote branch*
 
 ***
 

@@ -9,7 +9,7 @@ author: admin
 
   Some puzzles from various talks, blog posts, and other bits
 
-![](/img/0*3StcFi7Mii7eFJOZ.png)
+![](/img/0*3StcFi7Mii7eFJOZ.webp)
 
 ### Table of Contents
 

@@ -8,7 +8,7 @@ tags: [ featured ]
 author: admin
 ---
 
-  ![](/img/0*CYH--jxfZ8bQGcXj.png)
+  ![](/img/0*CYH--jxfZ8bQGcXj.webp)
   
 ***
 
