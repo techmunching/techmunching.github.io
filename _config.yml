@@ -1,8 +1,8 @@
 # Site
 name: 'TechMunching'
 description: 'Your daily tech snack'
-logo: '/assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+logo: '/assets/images/logo.webp'
+favicon: 'assets/images/logo.webp'
 baseurl: ''
 disqus: 'techmunching'
 email: 'techmunching@gmail.com'
@@ -23,7 +23,7 @@ authors:
     admin:
       name:           TechMunching
       site:           https://www.techmunching.com
-      avatar:         /assets/images/logo.png
+      avatar:         /assets/images/logo.webp
       bio:            "Hi, We are Tech Munching. We hope you love it!"
       email:          techmunching@gmail.com
       twitter:        https://twitter.com/techmunching
@@ -37,7 +37,7 @@ defaults:
     values:
       layout: post
       author: "TechMunching"
-      avatar: /assets/images/logo.png
+      avatar: /assets/images/logo.webp
       
   # all pages
   - scope:
