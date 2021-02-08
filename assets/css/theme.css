@@ -696,7 +696,7 @@ footer {
 article {
 	font-size:20px;
 	line-height:175%;
-	font-family:Lora;
+	font-family:charter, Georgia, Cambria, "Times New Roman", Times, serif;
 	margin: 0 5%;
 }
 .article-headline {
