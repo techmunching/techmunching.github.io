@@ -34,7 +34,7 @@ I’ll try to keep this post short and simple 😊
 
 class X is declared here as inherited by D1, D2 which in turn are inherited by other class in a complex manner by other classes.
 
-![](/img/1*9ZFGEBfTvwaafG1tsZR4QQ.png)*This will be our complex example* 
+![](/img/1_9ZFGEBfTvwaafG1tsZR4QQ.webp)*This will be our complex example* 
 
 Here as we clearly see following can be established —   
 1) V1 inherited by B1  
@@ -78,20 +78,20 @@ Also, one point to be noted is that —
 The rules are easiest to understand if you imagine that the very first thing the compiler does in the derived class’s constructor is to make a hidden call to the constructors of its virtual base and then non-virtual base classes (hint: that’s the way many compilers actually do it).
 
 
-> It’s like a DFS where the order on a same level is driven by class definitionExample — class ***D*** inherits from both ***B1*** and ***B2***,
+> It’s like a DFS where the order on a same level is driven by class definitionExample — class ***D*** inherits from both *** B1 *** and *** B2 ***,
 
-1. The constructor for ***B1*** executes first
+1. The constructor for ***B1 *** executes first
 2. then the constructor for ***B2***,
 3. Then the constructor for ***D***.   
 This rule is applied recursively
-For example, if ***B1*** inherits from ***B1a*** and ***B1b***, and ***B2*** inherits from ***B2a*** and ***B2b***, 
+For example, if ***B1 *** inherits from ***B1a*** and ***B1b***, and ***B2*** inherits from ***B2a*** and ***B2b***, 
 
 then the final order is   
-1. ***B1a*** => ***B1b*** => ***B1***, and then   
+1. ***B1a*** => ***B1b*** => ***B1 ***, and then   
 2. ***B2a => B2b =>*** ***B2****   
 3. *and ofcourse in the end* **D**.
 
-Note that the order ***B1*** and then ***B2*** (or ***B1a*** then ***B1b***) is determined by the order that the base classes appear in the declaration of the class, *not* in the order that the initializer appears in the derived class’s initialization list.
+Note that the order ***B1 *** and then ***B2*** (or ***B1a*** then ***B1b***) is determined by the order that the base classes appear in the declaration of the class, *not* in the order that the initializer appears in the derived class’s initialization list.
 
 [ Refer <https://medium.com/pranayaggarwal25/using-modern-class-members-and-initializations-c11e931c3ba> for more details about class member initializations ]
 
@@ -99,26 +99,26 @@ Note that the order ***B1*** and then ***B2*** (or ***B1a*** then ***B1b***) is 
 
 ### Let’s apply the rules, shall we?
 
-![](/img/1*9ZFGEBfTvwaafG1tsZR4QQ.png)*Looks easier now, doesn’t it?*
+![](/img/1_9ZFGEBfTvwaafG1tsZR4QQ.webp)*Looks easier now, doesn’t it?*
 
 The initialization order for a X object in Example 2 is as follows, where each constructor call shown represents the execution of the body of that constructor:
 
-![](/img/1*a-qxlGwcVWru5zB3Xo_4Yw.png)So —
+![](/img/1_a-qxlGwcVWru5zB3Xo_4Yw.webp)So —
 
-![](/img/1*TTTVf62ztLB7o-Z0g3na2A.png)*First — Construct the virtual bases V1 and V2 recursively by rules*
+![](/img/1_TTTVf62ztLB7o-Z0g3na2A.webp)*First — Construct the virtual bases V1 and V2 recursively by rules*
 After that, construct the remaining nonvirtual bases:
 
-![](/img/1*TY1_6ucxEUqM8HNQgeMsgQ.png)*Second — Construct the remaining non-virtual bases D1 and D2*
-Next, construct the members ***M1*** and ***M2 —***
+![](/img/1_TY1_6ucxEUqM8HNQgeMsgQ.webp)*Second — Construct the remaining non-virtual bases D1 and D2*
+Next, construct the members ***M1 *** and ***M2 —***
 
-![](/img/1*cDhZbtSxlmIfZanCtUjkAA.png)*Third — Class member construction*
+![](/img/1_cDhZbtSxlmIfZanCtUjkAA.webp)*Third — Class member construction*
 and in the last —
 
-![](/img/1*d0jyqK1WZL9p4MfTVvnRlg.png)*Final construction*
+![](/img/1_d0jyqK1WZL9p4MfTVvnRlg.webp)*Final construction*
 
 if you’re a fan of graphics, here is how the inheritance hierarchy looks like :
 
-![](/img/1*lNJNK6S_PTgulnoservZoQ.png)
+![](/img/1_lNJNK6S_PTgulnoservZoQ.webp)
 *Inheritance and object construction hierarchy (v means Virtual)*
 
 That’s pretty much it!

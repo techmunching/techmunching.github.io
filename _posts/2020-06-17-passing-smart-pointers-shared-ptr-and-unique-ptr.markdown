@@ -49,11 +49,11 @@ They stay agnostic of whatever lifetime policy the caller use and are good to ob
 
 This is restrictive and can’t beeasy to commit always then we’ll see and asset the best possible way to pass smart pointers.
 
-![](/img/1*CiD2BpQ9eDI1PX9OYMMLAQ.png)*Step1: Know your lifetimes…The full picture would keep becoming more clear :)*
+![](/img/1_CiD2BpQ9eDI1PX9OYMMLAQ.webp)*Step1: Know your lifetimes…The full picture would keep becoming more clear :)*
 
 So following should be the guideline if we are sure about the lifetime —
 
-![](/img/1*tuRoK1HFOMg2xkZcSGyTIw.png)*Guideline to follow in case of no share or transfer of ownership and valid lifetime*
+![](/img/1_tuRoK1HFOMg2xkZcSGyTIw.webp)*Guideline to follow in case of no share or transfer of ownership and valid lifetime*
 
 ***
 
@@ -78,11 +78,11 @@ And a bad example is below —
 void thinko(const unique_ptr<widget>&); // usually not what you want!
 ```
 
-[](/img/1*hsARhJ6S3gqAHfiNkdIlGQ.png)*unique_ptr passing guidelines*
+[](/img/1_hsARhJ6S3gqAHfiNkdIlGQ.webp)*unique_ptr passing guidelines*
 
 and our guideline picture is now —
 
-![](/img/1*cp9haQg73JXSEN-xfrJB-g.png)*Step2: Know your transfers … More clear picture :)*
+![](/img/1_cp9haQg73JXSEN-xfrJB-g.webp)*Step2: Know your transfers … More clear picture :)*
 
 #### **Guideline:**
 
@@ -114,9 +114,9 @@ void f( shared_ptr&<widget> ); // may reset pointerIn the special case where the
 ```
 So for ***shared_ptr*** follow this —
 
-![](/img/1*1VklHsi0KmZw17S5o0VW8Q.png) *shared_ptr passing guidelines* And finally, we have our full guideline picture here —
+![](/img/1_1VklHsi0KmZw17S5o0VW8Q.webp) *shared_ptr passing guidelines* And finally, we have our full guideline picture here —
 
-![](/img/1*GZhPV6_u-926_gDzo-_RHg.png) *Step3: The final guideline picture*
+![](/img/1_GZhPV6_u-926_gDzo-_RHg.webp) *Step3: The final guideline picture*
 
 ### How to pass correctly pass raw pointer/reference?
 

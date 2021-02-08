@@ -27,15 +27,15 @@ author: admin
 1. This can be prevented by the subject holding weak references to the observers, allowing them to be garbage collected as normal without needing to be unregistered.
 2. Thus the idea is to keep only the *std::weak\_ptr* in event dispatcher and do the **(lazy) cleanup on event invocation**.
 3. Probably something along the lines of -
-![](/img/1*CT7cfFrVE4Wg5cWPYnbKSQ.png)*Approxmiate event dispatcher: common resolution mechanism*
+![](/img/1_CT7cfFrVE4Wg5cWPYnbKSQ.webp)*Approxmiate event dispatcher: common resolution mechanism*
 
 4. And a simple notifier would look something like this
 
-![](/img/1*mL3H3spS721BbA0B2bBuNw.png)*Sample Notifier for the event dispatcher*
+![](/img/1_mL3H3spS721BbA0B2bBuNw.webp)*Sample Notifier for the event dispatcher*
 
 OR we can opt for the classic “erase and update” using iterator based loop and merge these two loop operation(s).
 
-> There is an issue with this approach, what’s that?![](/img/1*3zb5di6F074tfgGhQ_Q1-w.png)*What seems to be the problem?*
+> There is an issue with this approach, what’s that?![](/img/1_3zb5di6F074tfgGhQ_Q1-w.webp)*What seems to be the problem?*
 
 ***
 
@@ -45,7 +45,7 @@ OR we can opt for the classic “erase and update” using iterator based loop a
 
 1. Adding or removing observers? => Bad (**includes crashes**!)
 2. Blocking the action of another thread, who blocks on trying to add an observer? => Bad (**deadlocks**!)
-![](/img/1*IQoHqec3aVyY9i84tytCYQ.png)*Noooooo* 
+![](/img/1_IQoHqec3aVyY9i84tytCYQ.webp)*Noooooo* 
 
 Basically the problem is with **Reentrancy** here.
 
@@ -60,7 +60,7 @@ Basically the problem is with **Reentrancy** here.
 
 After this fix, a notifier would roughly look something like -
 
-![](/img/1*MKc-QgKtFgeZsAPZv9c0Gg.png)*Copy And Broadcast mechanism*
+![](/img/1_MKc-QgKtFgeZsAPZv9c0Gg.webp)*Copy And Broadcast mechanism*
 
 ***
 

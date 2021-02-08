@@ -3,12 +3,12 @@ layout:	post
 title:	"Find the element that appears once in array but other elements appear thrice"
 date:	2020-01-26
 categories: [ 'Algorithm', 'Interview Preparation' ]
-image: 'img/0*CYH--jxfZ8bQGcXj.png'
+image: 'img/0_CYH--jxfZ8bQGcXj.webp'
 tags: [ featured ]
 author: admin
 ---
 
-  ![](/img/0*CYH--jxfZ8bQGcXj.png)
+  ![](/img/0_CYH--jxfZ8bQGcXj.webp)
   
 ***
 

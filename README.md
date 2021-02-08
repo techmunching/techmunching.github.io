@@ -3,7 +3,7 @@ TechMunching blog - Your daily tech snack
 
 ### To add image captions just write caption in between two *'s right after img
 For e.g. 
-```![](/img/1*cp9haQg73JXSEN-xfrJB-g.png)*This is now the beautiful image caption*```
+```![](/img/1*cp9haQg73JXSEN-xfrJB-g.webp)*This is now the beautiful image caption*```
 
 ### For mentioning video within an article
 
@@ -22,7 +22,7 @@ Like instead of this
 
 ```
 ...
-image: 'img/0*-ExPwJS4GXXNwbyQ.jpeg'
+image: 'img/0_-ExPwJS4GXXNwbyQ.webp'
 ...
 ```
 
