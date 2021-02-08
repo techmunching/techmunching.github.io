@@ -1,6 +1,7 @@
 ---
 layout:	post
 title:	"Largest sub matrix rectangle with rearrangement with all 1s"
+description: "Find answer to LeetCode contest #1727. This tutorial provides easy understanding and visualization of data structure and algorithm problem on largest sub matrix rectangle with rearrangment with all 1s. Let's try to to look at the problem in a different way..."
 date:	2021-01-17
 categories: [ 'C++', 'Algorithm', 'Interview Preparation' ]
 image: 'img/bricks.png'
