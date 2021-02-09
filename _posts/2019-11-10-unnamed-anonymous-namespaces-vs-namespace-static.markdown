@@ -1,6 +1,7 @@
 ---
 layout:	post
 title:	"Unnamed anonymous namespaces vs namespace static"
+Description: "Are you struggling with why is an unnamed namespace used instead of static? What is anonymous namespace in c++? Our writeup helps clarify bridge all these gaps and dives deep into details of unnamed namespaces."
 date:	2019-11-10
 categories: [ 'Git' ]
 image: img/0*Z2Qy5Q3HZhjjy6Bx

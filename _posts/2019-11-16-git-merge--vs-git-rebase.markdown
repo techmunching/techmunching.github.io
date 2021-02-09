@@ -1,6 +1,7 @@
 ---
 layout:	post
 title:	"Git merge vs Git Rebase"
+description: "Easy to understand tutorial clarifying git rebase and git merge. Although they might serve the same purpose of combining multiple branches, yet they are subtle nuances to understand. "
 date:	2019-11-16
 categories: [ 'Git' ]
 image: 'img/0_-ExPwJS4GXXNwbyQ.webp'

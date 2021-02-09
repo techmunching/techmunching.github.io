@@ -1,6 +1,7 @@
 ---
 layout:	post
 title:	"No more dealing with slow MacBookPro"
+description: "is your macbook pro very slow and unresponsive? It's a common situation with MacBook Pro users where the fan would be running at its full speed and your laptop is unresponsive. Let's look a easy way to handle it..."
 date:	2021-01-28
 categories: [ 'Productivity' ]
 video: img/throttle_1.mp4

@@ -1,6 +1,7 @@
 ---
 layout:	post
 title:	"10 Awesome Git Tricks: An advanced cheatsheet"
+description: "Looking for your ultimate Git cheatsheet? We have compiled for you the most used advanced Git cheat sheet and best practices, that can make you 10x faster. Let's dive into it..."
 date:	2019-10-21
 categories: [ 'Git' ]
 image: 'img/0*wASU3bLLfLP3ve7L'

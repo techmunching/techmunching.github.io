@@ -1,6 +1,7 @@
 ---
 layout:	post
 title:	"Create and manage multiple GitHub accounts"
+description: "Do you have a personal and work Github account? This tutorials helps you use multiple github account on a single computer using SSH. let's say..."
 date:	2019-10-14
 categories: [ 'Git' ]
 image: 'img/0_kkcqnMF8wuVE-GaXT-r1Gg.webp'

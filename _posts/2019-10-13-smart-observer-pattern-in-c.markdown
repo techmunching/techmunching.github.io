@@ -1,6 +1,7 @@
 ---
 layout:	post
 title:	"Smart Observer Pattern in C++"
+description: "Event dispatcher helps to communicate across different components in an architecture. This tutorials shared an advanced architecture for event dispatcher which handles life time of event in an multithreaded environment. Let's look into..."
 date:	2019-10-13
 categories: [ 'C++' ]
 image: 'img/0*5TpHrNqaemC7yh-U'

@@ -1,6 +1,7 @@
 ---
 layout:	post
 title:	"A tale of two allocations"
+description: "C++11 introduced shared pointer to safely allocate dynamic memory in the RAII paradigm. We try to demystify the logical model for shared_ptr and usage of make_shared. So let's try to look into it deeper..."
 date:	2019-10-12
 categories: [ 'C++' ]
 image: 'img/1_C4SOhNW1GC5SBLMXBwZv0g.webp'
