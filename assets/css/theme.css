@@ -24,6 +24,38 @@ img {
 	-webkit-box-orient: vertical;
 }
 
+@media screen and (orientation:portrait) {
+
+	.w-125-card {
+		object-fit:cover; 
+		width:125px;
+		height: 125px;
+		border: 0.5px solid lightgrey;
+	}
+	
+	.w-100-125-card {
+		object-fit:cover; 
+		width:150px;
+		height: 100px;
+		border: 0.5px solid lightgrey;
+	}
+}
+@media screen and (orientation:landscape) {
+	.w-125-card {
+		object-fit:cover; 
+		width:100% !important;
+		height: 125px;
+		border: 0.5px solid lightgrey;
+	}
+	
+	.w-100-125-card {
+		object-fit:cover; 
+		width:150px;
+		height: 100px;
+		border: 0.5px solid lightgrey;
+	}
+}
+
 .lines-limit-2 {
 	overflow: hidden;
 	text-overflow: ellipsis; 

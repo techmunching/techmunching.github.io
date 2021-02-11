@@ -63,17 +63,17 @@ pagination:
         {%- assign second_post = site.posts[1] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if second_post.image %}
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                 <a href="{{site.baseurl}}{{second_post.url}}">
-                    <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{site.baseurl}}/{{ second_post.image }}{% endif %}" alt="{{ second_post.title }}">
+                    <img class="w-100-125-card" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{site.baseurl}}/{{ second_post.image }}{% endif %}" alt="{{ second_post.title }}">
                 </a>
                 </div>
                 {% endif %}  
 
                 {% if second_post.video %}
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                 <a href="{{site.baseurl}}{{second_post.url}}">
-                 <video type="video/mp4" style="max-width:100%" autoplay muted loop class="w-100" src="{% if second_post.video contains "://" %}{{ second_post.video }}{% else %}{{site.baseurl}}/{{ second_post.video }}{% endif %}" alt="{{ second_post.title }}">
+                 <video type="video/mp4" style="max-width:100%" autoplay muted loop class="w-100-125-card" src="{% if second_post.video contains "://" %}{{ second_post.video }}{% else %}{{site.baseurl}}/{{ second_post.video }}{% endif %}" alt="{{ second_post.title }}">
                 </a>
                 </div>
                 {% endif %}  
@@ -99,17 +99,17 @@ pagination:
         {%- assign third_post = site.posts[2] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if third_post.image %}
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                 <a href="{{site.baseurl}}{{third_post.url}}">
-                 <img class="w-100" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
+                 <img class="w-100-125-card" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
                 </a>
                 </div>
                 {% endif %}  
                 
                 {% if third_post.video %}
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                 <a href="{{site.baseurl}}{{third_post.url}}">
-                 <video type="video/mp4" style="max-width:100%" autoplay muted loop class="w-100" src="{% if third_post.video contains "://" %}{{ third_post.video }}{% else %}{{site.baseurl}}/{{ third_post.video }}{% endif %}" alt="{{ third_post.title }}">
+                 <video type="video/mp4" style="max-width:100%" autoplay muted loop class="w-100-125-card" src="{% if third_post.video contains "://" %}{{ third_post.video }}{% else %}{{site.baseurl}}/{{ third_post.video }}{% endif %}" alt="{{ third_post.title }}">
                 </a>
                 </div>
                 {% endif %}   
@@ -135,17 +135,17 @@ pagination:
         {%- assign fourth_post = site.posts[3] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if fourth_post.image %}
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                 <a href="{{site.baseurl}}{{fourth_post.url}}">
-                <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
+                <img class="w-100-125-card" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
                 </a>
                 </div>
                 {% endif %}  
                 
                 {% if fourth_post.video %}
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                 <a href="{{site.baseurl}}{{fourth_post.url}}">
-                 <video type="video/mp4" style="max-width:100%" autoplay muted loop class="w-100" src="{% if fourth_post.video contains "://" %}{{ fourth_post.video }}{% else %}{{site.baseurl}}/{{ fourth_post.video }}{% endif %}" alt="{{ fourth_post.title }}">
+                 <video type="video/mp4" style="max-width:100%" autoplay muted loop class="w-100-125-card" src="{% if fourth_post.video contains "://" %}{{ fourth_post.video }}{% else %}{{site.baseurl}}/{{ fourth_post.video }}{% endif %}" alt="{{ fourth_post.title }}">
                 </a>
                 </div>
                 {% endif %}  
