@@ -5592,13 +5592,25 @@ button.bg-lightblue:focus {
 .d-inline-flex {
   display: inline-flex !important; }
 
-.float-button {
-  position: fixed;
-  right: 77px;
-  z-index: 9999;
+@media (min-width: 1000px) {
+  .float-button {
+    position: fixed;
+    right: 3%;
+    z-index: 9999;
+  }
+    
 }
 
+@media (min-width: 1200px) {
+  .float-button {
+    position: fixed;
+    right: 5%;
+    z-index: 9999;
+  }
     
+}
+
+
 @media (min-width: 576px) {
   .d-sm-none {
     display: none !important; }
