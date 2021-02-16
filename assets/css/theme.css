@@ -84,6 +84,7 @@ a,a:hover {
 }
 a {
 	color:#03a87c;
+	word-wrap: break-word;
 }
 a.text-dark:hover {
 	color:#03a87c !important;
