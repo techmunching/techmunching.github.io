@@ -4,14 +4,13 @@ title:	"Git merge vs Git Rebase"
 description: "Easy to understand tutorial clarifying git rebase and git merge. Although they might serve the same purpose of combining multiple branches, yet they are subtle nuances to understand. "
 date:	2019-11-16
 categories: [ 'Git' ]
-image: 'img/0_-ExPwJS4GXXNwbyQ.webp'
+image: '0_-ExPwJS4GXXNwbyQ'
 author: admin
 ---
 
 A complete discussion about git rebase vs git merge (and squash merge)
 
-![](/img/0_-ExPwJS4GXXNwbyQ.webp)
-
+{% include pictures.html img="0_-ExPwJS4GXXNwbyQ" alt="Git merge vs Git Rebase" %}
 ***
 
 ### Table of Contents
@@ -57,7 +56,6 @@ How do you check that? Fire up the terminal and a merge commit would look like b
   Merge branch 'master' of github.com:pranayaggarwal/enumifier
 ```
 
-<!-- ![](/img/0*DHmWhgEMZOSW3OVz.gif) -->
 <div class="vidWrapper">
   <video style="max-width:100%" autoplay muted loop>
     <source src="/img/0*DHmWhgEMZOSW3OVz.mp4" type="video/mp4">
@@ -84,7 +82,6 @@ How do you check that? Fire up the terminal and a merge commit would look like b
 
 That’s why the implicit merge can be completed without an explicit merge commit: it literally just fast-forwards the branch label to the new commit as shown below.
 
-<!-- ![](/img/0*GhW5WSCRH1dneU6c.gif) -->
 <div class="vidWrapper">
   <video style="max-width:100%" autoplay muted loop>
     <source src="/img/0*GhW5WSCRH1dneU6c.mp4" type="video/mp4">
@@ -106,7 +103,7 @@ That’s why the implicit merge can be completed without an explicit merge commi
 
 In the event that you require a merge commit during a fast forward merge for record-keeping purposes, you can execute git merge with the --no-ffoption.
 
-![](/img/0_6OWQ6E6bT-TmuEvJ.webp)*git merge — no-ff vs git merge*
+{% include pictures.html img="0_6OWQ6E6bT-TmuEvJ" alt="git merge — no-ff vs git merge" %}*git merge — no-ff vs git merge*
 
 Merge the master branch into the feature branch using the checkout and merge commands.
 ```shell
@@ -127,7 +124,6 @@ This will create a new “**Merge commit**” in the feature branch that holds t
 
 Rebase is **recreating your work from one branch onto another**.
 
-<!-- ![](/img/0*JRt9VF_osaAoVwKg.gif) -->
 <div class="vidWrapper">
   <video style="max-width:100%" autoplay muted loop>
     <source src="/img/0*JRt9VF_osaAoVwKg.mp4" type="video/mp4">
@@ -137,7 +133,6 @@ Rebase is **recreating your work from one branch onto another**.
 
 Read this again, slowly: **new commit for every old one, with the same changes**.
 
-<!-- ![](/img/0*1VkO0oTn-PPPzJmx.gif) -->
 <div class="vidWrapper">
   <video style="max-width:100%" autoplay muted loop>
     <source src="/img/0*1VkO0oTn-PPPzJmx.mp4" type="video/mp4">
@@ -181,7 +176,6 @@ Rebase the feature branch onto the master branch using the following commands.
 
 A third way to move changes is to *squash* all feature branch’s commits into a single commit before performing an implicit merge *fast-forward* merge or *rebase*.
 
-<!-- ![](/img/0*0BgII1PmO8JzjnXD.gif) -->
 <div class="vidWrapper">
   <video style="max-width:100%" autoplay muted loop>
     <source src="/img/0*0BgII1PmO8JzjnXD.mp4" type="video/mp4">
@@ -229,7 +223,6 @@ This way, new errors are introduced when you rewrite history, and they may disgu
   git bisect run <yourtest.sh>
 ```
 
-<!-- ![](/img/0*cfutfYn25YFEgBvM.gif) -->
 <div class="vidWrapper">
   <video style="max-width:100%" autoplay muted loop>
     <source src="/img/0*cfutfYn25YFEgBvM.mp4" type="video/mp4">

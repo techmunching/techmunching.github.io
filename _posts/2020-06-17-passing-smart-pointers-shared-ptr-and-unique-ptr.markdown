@@ -3,13 +3,13 @@ layout:	post
 title:	"Passing smart pointers shared_ptr and unique_ptr"
 date:	2020-06-17
 categories: [ 'C++' ]
-image: img/0*MKKxnMeiF8CTX0zm
+image: 0*MKKxnMeiF8CTX0zm
 author: admin
 ---
 
   General guidelines to follow for passing shared\_ptr and unique\_ptr as function arguments and at the time of return.
 
-![](/img/0*MKKxnMeiF8CTX0zm)
+{% include pictures.html img="0*MKKxnMeiF8CTX0zm" alt="As always, prefer unique\_ptr to shared\_ptr, unless you intend to share ownership" %}
 > As always, prefer unique\_ptr to shared\_ptr, unless you intend to share ownership.
 
 ***
@@ -49,11 +49,13 @@ They stay agnostic of whatever lifetime policy the caller use and are good to ob
 
 This is restrictive and can’t beeasy to commit always then we’ll see and asset the best possible way to pass smart pointers.
 
-![](/img/1_CiD2BpQ9eDI1PX9OYMMLAQ.webp)*Step1: Know your lifetimes…The full picture would keep becoming more clear :)*
+{% include pictures.html img="1_CiD2BpQ9eDI1PX9OYMMLAQ" alt="Step1: Know your lifetimes…The full picture would keep becoming more clear :)" %}
+*Step1: Know your lifetimes…The full picture would keep becoming more clear :)*
 
 So following should be the guideline if we are sure about the lifetime —
 
-![](/img/1_tuRoK1HFOMg2xkZcSGyTIw.webp)*Guideline to follow in case of no share or transfer of ownership and valid lifetime*
+{% include pictures.html img="1_tuRoK1HFOMg2xkZcSGyTIw" alt="Guideline to follow in case of no share or transfer of ownership and valid lifetime" %}
+*Guideline to follow in case of no share or transfer of ownership and valid lifetime*
 
 ***
 
@@ -78,11 +80,13 @@ And a bad example is below —
 void thinko(const unique_ptr<widget>&); // usually not what you want!
 ```
 
-[](/img/1_hsARhJ6S3gqAHfiNkdIlGQ.webp)*unique_ptr passing guidelines*
+{% include pictures.html img="1_hsARhJ6S3gqAHfiNkdIlGQ" alt="unique_ptr passing guidelines" %}
+*unique_ptr passing guidelines*
 
 and our guideline picture is now —
 
-![](/img/1_cp9haQg73JXSEN-xfrJB-g.webp)*Step2: Know your transfers … More clear picture :)*
+{% include pictures.html img="1_cp9haQg73JXSEN-xfrJB-g" alt="Step2: Know your transfers … More clear picture :)" %}
+*Step2: Know your transfers … More clear picture :)*
 
 #### **Guideline:**
 
@@ -114,9 +118,11 @@ void f( shared_ptr&<widget> ); // may reset pointerIn the special case where the
 ```
 So for ***shared_ptr*** follow this —
 
-![](/img/1_1VklHsi0KmZw17S5o0VW8Q.webp) *shared_ptr passing guidelines* And finally, we have our full guideline picture here —
+{% include pictures.html img="1_1VklHsi0KmZw17S5o0VW8Q" alt="shared_ptr passing guidelines" %}
+*shared_ptr passing guidelines* And finally, we have our full guideline picture here —
 
-![](/img/1_GZhPV6_u-926_gDzo-_RHg.webp) *Step3: The final guideline picture*
+{% include pictures.html img="1_GZhPV6_u-926_gDzo-_RHg" alt="Step3: The final guideline picture" %}
+*Step3: The final guideline picture*
 
 ### How to pass correctly pass raw pointer/reference?
 

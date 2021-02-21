@@ -3,14 +3,14 @@ layout:	post
 title:	"Coroutines and their introduction in C++"
 date:	2020-05-30
 categories: [ 'C++', 'C++20' ]
-image: img/0_qg0kAy5Zjb9DiXaU.webp
+image: 0_qg0kAy5Zjb9DiXaU
 tags: [ featured ]
 author: admin
 ---
 
   Let’s discuss what coroutines are in general and how C++20 is introducing them
 
-![](/img/0_qg0kAy5Zjb9DiXaU.webp)
+{% include pictures.html img="0_qg0kAy5Zjb9DiXaU" alt="what coroutines are in general" %}
 
 ***
 
@@ -49,11 +49,13 @@ This is why coroutines are well-suited for implementing familiar program compone
 * With subroutines, execution begins at the start and finished on exit.
 * Subroutines are special cases of coroutines. Any subroutine can be translated to a coroutine which does not call ‘yield’ (relinquish control).
 * Subroutines only return once and don't hold the complete state between invocations.
-![](/img/0_u8LQUT-o3R32MBgP.webp)In contrast —
+{% include pictures.html img="0_u8LQUT-o3R32MBgP" alt="" %}
+
+In contrast —
 
 * Coroutines can exit by calling other coroutines, which may later return to the point where they were invoked in the original coroutine; from the coroutine’s point of view, it is actually not exiting but calling another coroutine.
 * A coroutine instance holds state and varies between invocations.
-![](/img/1_bYDtHHWQDCvDt3XZAkNVoQ.webp)
+{% include pictures.html img="1_bYDtHHWQDCvDt3XZAkNVoQ" alt="" %}
 
 ***
 
@@ -82,7 +84,7 @@ Thus coroutines —
 
 Coroutines are there to throw away the stack concept completely. Stop thinking of one process as the caller and the other as the callee, and start thinking of them as **cooperating equals**.
 
-![](/img/0*DaO1S9QPlS2HOrhA)*Execution flow for reading a file and finding text*
+{% include pictures.html img="0*DaO1S9QPlS2HOrhA" alt="Execution flow for reading a file and finding text" %}
 
 **Example 2 —**You have a consumer-producer relationship where one routine creates items and adds them to a queue and another removes items from the queue and uses them. For reasons of efficiency, you want to add and remove several items at once. The pseudo-code might look like this:
 <pre>

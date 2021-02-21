@@ -4,13 +4,11 @@ title:	"Find the element that appears once in array but other elements appear th
 description: "With this tutorial we try to solve the problem of finding element that appears once in array but other elements appear thrice. This isn't just another XOR answer. To rectify this problem, the solution makes use of 2 variables..."
 date:	2020-01-26
 categories: [ 'Algorithm', 'Interview Preparation' ]
-image: 'img/0_CYH--jxfZ8bQGcXj.webp'
+image: '0_CYH--jxfZ8bQGcXj'
 tags: [ featured ]
 author: admin
 ---
-
-  ![](/img/0_CYH--jxfZ8bQGcXj.webp)
-  
+  {% include pictures.html img="0_CYH--jxfZ8bQGcXj" alt="" %}
 ***
 
 ### Problem

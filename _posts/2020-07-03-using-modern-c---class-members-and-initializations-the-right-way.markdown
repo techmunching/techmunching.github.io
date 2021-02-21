@@ -3,13 +3,16 @@ layout:	post
 title:	"Using Modern C++ class members and initializations the right way"
 date:	2020-07-03
 categories: [ 'C++' ]
-image: img/0_csRd0YjayeNTl96F.webp
+image: 0_csRd0YjayeNTl96F
 author: admin
 ---
 
   Using In-member initialization, using constructors smartly and using class members functions in a safe and proper way to avoid mistakes
 
-![](/img/0_csRd0YjayeNTl96F.webp)Clean code!### Table of Contents
+{% include pictures.html img="0_csRd0YjayeNTl96F" alt="Clean code!" %}
+*Clean code!*
+
+### Table of Contents
 
 1. Use member initializers in the same order as their declaration
 2. Prefer in-class member initializer over constant initializations OR over default constructor.
@@ -23,7 +26,10 @@ Member variables are always initialized in the order they are declared in the cl
 
 Make sure the constructor code doesn’t confusingly specify different orders. For e.g. this case as below —
 
-![](/img/1_Wzlu5I7J1KamJhQYob7_4w.webp)Would lead to issuesemail is declared before first\_name and last\_name in the class definition, hence as per the constructor call, it will be initialized first and will attempt to use the other not-yet-initialized fields which are first\_name and last\_name .
+{% include pictures.html img="1_Wzlu5I7J1KamJhQYob7_4w" alt="Would lead to issuese" %}
+*Would lead to issuese* 
+
+mail is declared before first\_name and last\_name in the class definition, hence as per the constructor call, it will be initialized first and will attempt to use the other not-yet-initialized fields which are first\_name and last\_name .
 
 #### How to make it right
 
@@ -46,9 +52,15 @@ You should don’t define a default constructor that only initializes data membe
 
 Example — A bad class that misses one initialization in a constructor
 
-![](/img/1_iRhyfPkavdlODmNqmNEKsw.webp)**Cons of not using in-member class initializers**where the following is an example of a much better class
+{% include pictures.html img="1_iRhyfPkavdlODmNqmNEKsw" alt="Cons of not using in-member class initializers" %}
+*Cons of not using in-member class initializers*
 
-![](/img/1_GNGSOMx_9NcelulDaYnytg.webp)**Using in-member class initializers, Nice!!**#### Reason
+where the following is an example of a much better class
+
+{% include pictures.html img="1_GNGSOMx_9NcelulDaYnytg" alt="Using in-member class initializers, Nice!!" %}
+*Using in-member class initializers, Nice!!*
+
+#### Reason
 
 Using in-class member initializers lets the compiler generate the function for you. Also, the compiler-generated function can be more efficient 😊
 
@@ -64,13 +76,19 @@ For e.g. — Stuff is a class that does some calculations overnumber1 and number
 
 number1 and number2 are updated byService1() and Service2() functions respectively.
 
-![](/img/1_AuUxrjVaYzHmo_OacXV5qA.webp)Now, in case read frequency of getValue() is much more than the number of writes, we should preemptively update the cachedValue which is returned.
+{% include pictures.html img="1_AuUxrjVaYzHmo_OacXV5qA" alt="" %}
+
+Now, in case read frequency of getValue() is much more than the number of writes, we should preemptively update the cachedValue which is returned.
 
 Such as —
 
-![](/img/1_rqMbsx6k1igbaXt3OKW5dw.webp)However, in case the number of writes is much more, we should follow **a lazy calculation approach** where we set a dirty flag such as below —
+{% include pictures.html img="1_rqMbsx6k1igbaXt3OKW5dw" alt="" %}
 
-![](/img/1_TD_ZSa_Y2-jmsOZHZO8B2w.webp)getValue function would show error as it’s marked constBut this poses a problem because const function can not modify this **newly introduced class member variable **cachedValid .
+However, in case the number of writes is much more, we should follow **a lazy calculation approach** where we set a dirty flag such as below —
+
+{% include pictures.html img="1_TD_ZSa_Y2-jmsOZHZO8B2w" alt="" %}
+
+getValue function would show error as it’s marked constBut this poses a problem because const function can not modify this **newly introduced class member variable **cachedValid .
 
 1. **A wrong fix **would be to remove const from** **getValue() function
 2. **Another wrong fix **would be to const\_cast over “*this”* pointer.
@@ -84,7 +102,10 @@ Doing this makes a lie out of const. Any variable is actually declared asconst, 
 
 The right fix would be to declare cachedValid and cachedValue as mutable so that thegetValue() function can only modify the mutable ones.
 
-![](/img/1_DgxaGoDSuAcpP58716AYRQ.webp)The correct fix#### Benefits of correct fix
+{% include pictures.html img="1_DgxaGoDSuAcpP58716AYRQ" alt="The correct fix" %}
+*The correct fix*
+
+#### Benefits of correct fix
 
 * Header file tells the truth
 * getValue() function can only change the mutable variables
@@ -97,7 +118,13 @@ The common action gets tedious to write and may accidentally not be common. Henc
 
 For e.g. — This Date is a bad class.
 
-![](/img/1_WNgLgmo1n2TEsdoGYPy_EQ.webp)A bad series of constructors, duplicate logic![](/img/1_B5w6vP4oil0rnbYdMWkyng.webp)**Good!! Using delegating constructors**#### Reason
+{% include pictures.html img="1_WNgLgmo1n2TEsdoGYPy_EQ" alt="A bad series of constructors, duplicate logic" %}
+*A bad series of constructors, duplicate logic*
+
+{% include pictures.html img="1_B5w6vP4oil0rnbYdMWkyng" alt="Good!! Using delegating constructors" %}
+*Good!! Using delegating constructors*
+
+#### Reason
 
 To avoid repetition and accidental differences.
 

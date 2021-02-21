@@ -9,7 +9,6 @@ author: admin
 
   How virtual vs. multiple inheritance affect class object construction order?
 
-<!-- ![](/img/0*VtNlssb8zTqF0nY9.gif) -->
 <div class="vidWrapper">
 <video style="max-width:100%" autoplay muted loop>
   <source src="/img/0*VtNlssb8zTqF0nY9.mp4" type="video/mp4">
@@ -34,7 +33,8 @@ I’ll try to keep this post short and simple 😊
 
 class X is declared here as inherited by D1, D2 which in turn are inherited by other class in a complex manner by other classes.
 
-![](/img/1_9ZFGEBfTvwaafG1tsZR4QQ.webp)*This will be our complex example* 
+{% include pictures.html img="1_9ZFGEBfTvwaafG1tsZR4QQ" alt="This will be our complex example" %}
+*This will be our complex example* 
 
 Here as we clearly see following can be established —   
 1) V1 inherited by B1  
@@ -99,31 +99,42 @@ Note that the order ***B1 *** and then ***B2*** (or ***B1a*** then ***B1b***) is
 
 ### Let’s apply the rules, shall we?
 
-![](/img/1_9ZFGEBfTvwaafG1tsZR4QQ.webp)*Looks easier now, doesn’t it?*
+{% include pictures.html img="1_9ZFGEBfTvwaafG1tsZR4QQ" alt="Looks easier now, doesn’t it?" %}
+*Looks easier now, doesn’t it?*
 
 The initialization order for a X object in Example 2 is as follows, where each constructor call shown represents the execution of the body of that constructor:
 
-![](/img/1_a-qxlGwcVWru5zB3Xo_4Yw.webp)So —
+{% include pictures.html img="1_a-qxlGwcVWru5zB3Xo_4Yw" alt="" %}
+So —
 
-![](/img/1_TTTVf62ztLB7o-Z0g3na2A.webp)*First — Construct the virtual bases V1 and V2 recursively by rules*
+{% include pictures.html img="1_TTTVf62ztLB7o-Z0g3na2A" alt="First — Construct the virtual bases V1 and V2 recursively by rules" %}
+*First — Construct the virtual bases V1 and V2 recursively by rules*
 After that, construct the remaining nonvirtual bases:
 
-![](/img/1_TY1_6ucxEUqM8HNQgeMsgQ.webp)*Second — Construct the remaining non-virtual bases D1 and D2*
+{% include pictures.html img="1_TY1_6ucxEUqM8HNQgeMsgQ" alt="Second — Construct the remaining non-virtual bases D1 and D2" %}
+*Second — Construct the remaining non-virtual bases D1 and D2*
 Next, construct the members ***M1 *** and ***M2 —***
 
-![](/img/1_cDhZbtSxlmIfZanCtUjkAA.webp)*Third — Class member construction*
+{% include pictures.html img="1_cDhZbtSxlmIfZanCtUjkAA" alt="Third — Class member construction" %}
+*Third — Class member construction*
 and in the last —
 
-![](/img/1_d0jyqK1WZL9p4MfTVvnRlg.webp)*Final construction*
+{% include pictures.html img="1_d0jyqK1WZL9p4MfTVvnRlg" alt="Final construction" %}
+*Final construction*
 
 if you’re a fan of graphics, here is how the inheritance hierarchy looks like :
 
-![](/img/1_lNJNK6S_PTgulnoservZoQ.webp)
+{% include pictures.html img="1_lNJNK6S_PTgulnoservZoQ" alt="Inheritance and object construction hierarchy (v means Virtual)" %}
 *Inheritance and object construction hierarchy (v means Virtual)*
 
 That’s pretty much it!
 
-![](/img/0*RymMjGO7qYGCJPV2)
+<div class="vidWrapper">
+<video style="max-width:100%" autoplay muted loop>
+  <source src="/img/0*RymMjGO7qYGCJPV2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
 
 ***
 

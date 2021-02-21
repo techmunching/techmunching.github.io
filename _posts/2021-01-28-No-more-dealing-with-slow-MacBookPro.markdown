@@ -10,7 +10,6 @@ author: admin
 
 # Here's another MacBookPro 101 for you!!
 
-<!-- ![](/img/throttle_1.gif) -->
 <div class="vidWrapper">
     <video style="max-width:100%" autoplay muted loop>
     <source src="/img/throttle_1.mp4" type="video/mp4">
@@ -33,9 +32,10 @@ Here is what I suggest - Turn on the fan to full throttle and let your fan alway
 
 Here is the snapshot of the settings your need to opt for:
 
-![](/img/throttle_2.webp)
+{% include pictures.html img="throttle_2" alt="No more dealing with slow MacBookPro" %}
 
-![](/img/throttle_3.webp)
+{% include pictures.html img="throttle_3" alt="Turn on the fan to full throttle" %}
+
 
 I hope it helps my fellow mates.!
 

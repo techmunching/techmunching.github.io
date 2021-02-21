@@ -3,14 +3,13 @@ layout:	post
 title:	"Move Semantics in C++ : Part 1"
 date:	2020-03-22
 categories: [ 'C++', 'Interview Preparation' ]
-image: 'img/0_TbvZrhoMfgtPAsaa.webp'
+image: '0_TbvZrhoMfgtPAsaa'
 author: admin
 ---
 
   **Prerequisites**: [Understanding of rvalue references](https://medium.com/pranayaggarwal25/rvalue-references-e99dfd3933ff)
 
-![Move Semantics](/img/0_TbvZrhoMfgtPAsaa.webp)
-
+{% include pictures.html img="0_TbvZrhoMfgtPAsaa" alt="Move Semantics" %}
 ***
 
 ### What are rvalues?
@@ -66,7 +65,7 @@ vec = createAndInsert();
 
 ```
 
-![](/img/1_Skf__7ocaqDjgy0NuzonpQ.webp)*Final Memory footprint after createAndInsert() function call*
+{% include pictures.html img="1_Skf__7ocaqDjgy0NuzonpQ" alt="Final Memory footprint after createAndInsert() function call" %}*Final Memory footprint after createAndInsert() function call*
 
 ***
 

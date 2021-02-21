@@ -9,7 +9,6 @@ author: admin
 
   What are closures vs how lambdas are different from closures?
 
-<!-- ![](/img/0*PA8-5rLUUze-e0iK.gif) -->
 <div class="vidWrapper">
 <video style="max-width:100%" autoplay muted loop>
   <source src="/img/0*PA8-5rLUUze-e0iK.mp4" type="video/mp4">

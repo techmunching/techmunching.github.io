@@ -3,13 +3,12 @@ layout:	post
 title:	"Rvalue references in C++"
 date:	2020-04-07
 categories: [ 'C++', 'Interview Preparation' ]
-image: 'img/0_e5WJhg2seFQhG4vGd65yeQ.webp'
+image: '0_e5WJhg2seFQhG4vGd65yeQ'
 tags: [ featured ]
 author: admin
 ---
 
-  ![](/img/0_e5WJhg2seFQhG4vGd65yeQ.webp)*rvalue references*
-  
+  {% include pictures.html img="0_e5WJhg2seFQhG4vGd65yeQ" alt="rvalue references" %}
 ***
 
 ### Contents
@@ -93,7 +92,8 @@ When lvalues were originally defined, they were defined as *“values that are s
 
 A reference that **binds to an lvalue,** lvalue reference is marked with a single ampersand (&). They act as an alias of the bound object.
 
-![](/img/1_yTSGKUlIEfiH9tZA7Akbsg.webp)*The thing about lvalue references (Table#1 and Table#2*
+{% include pictures.html img="1_yTSGKUlIEfiH9tZA7Akbsg" alt="The thing about lvalue references (Table#1 and Table#2" %}
+*The thing about lvalue references (Table#1 and Table#2*
 
 ```
   =========================================================  
@@ -126,7 +126,9 @@ A reference that **binds to an rvalue.** rvalue references are marked with two a
 
 
 > *Every rvalue ref is denoted by ‘&&’ but vice versa is not true.   
-> ‘&&’ may also imply forwarding (a.k.a) universal reference. Will cover Universal references in another article.*![](/img/1_P44tpDonN4ti5N7Bvfaoog.webp)*The thing about rvalue references (Table#3 and Table#4)*
+> ‘&&’ may also imply forwarding (a.k.a) universal reference. Will cover Universal references in another article.*
+
+{% include pictures.html img="1_P44tpDonN4ti5N7Bvfaoog" alt="The thing about rvalue references (Table#3 and Table#4)" %}
 
 ```
   =========================================================

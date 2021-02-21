@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://glyph.medium.com">
 
     <!-- Font Awesome Icons -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin>
 
     <!-- Google Fonts-->
     <!-- <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet"> -->
@@ -54,7 +54,12 @@
 
         <div class="d-flex flex-row">
             <div class="p-1" style="min-width: 40px;width: 10%;">
-                <a href="{{ site.baseurl }}/"><img src="/assets/images/logo_small.webp" alt="TechMunching Home"/></a>
+                <a href="{{ site.baseurl }}/">
+                    <picture>
+                        <source type="image/webp" srcset="/assets/images/logo_small.webp" >
+                        <img src="/assets/images/logo_small.jpg" alt="TechMunching Home" />
+                    </picture>
+                </a>
             </div>
             <div class="p-1">
                 <a class="navbar-brand" href="{{ site.baseurl }}/"><strong>{{site.name}}</strong>     

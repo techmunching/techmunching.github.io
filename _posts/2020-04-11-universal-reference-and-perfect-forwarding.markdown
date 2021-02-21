@@ -9,7 +9,6 @@ author: admin
 
   **Also known as Forwarding reference**
 
-<!-- ![](/img/0*wi8CKG57G8q3-woE.gif) -->
 <div class="vidWrapper">
   <video style="max-width:100%" autoplay muted loop>
     <source src="/img/0*wi8CKG57G8q3-woE.mp4" type="video/mp4">
@@ -53,7 +52,8 @@ Rvalue reference ⇒ “*&&*”
 
 There is a double life that “&&” lives on and we need to understand that. Let’s see some examples —
 
-![](/img/1_BejVgArr4hHBus4hS3aoSw.webp)*The double life of “&&”*
+{% include pictures.html img="1_BejVgArr4hHBus4hS3aoSw" alt="The double life of &&" %}
+*The double life of “&&”*
 
 In “*type &&*”, *&&* means either -
 
@@ -94,7 +94,8 @@ void f(MyType&& param); // && ≡ rvalue reference
 
 Out of the above 4, the first two are the most commonly occurring cases. As we have seen in the rule, type deduction is must so —
 
-![](/img/1_hxu81px55zDERu49GRh3bA.webp)*Understanding Type Deduction*
+{% include pictures.html img="1_hxu81px55zDERu49GRh3bA" alt="Understanding Type Deduction" %}
+*Understanding Type Deduction*
 
 ***
 
@@ -189,7 +190,8 @@ const auto&& var = i; // Not a Universal Reference hence Error!!
 
 In pre-11 C++, it was not allowed to take a reference to a reference: something like A& & would cause a compile error. C++11, by contrast, introduces the following **R*eference collapsing rules***:
 
-![](/img/1_kMsWQ7At7DM5eNqZt9QcQg.webp)*Table 1: Reference Collapsing Rules*
+{% include pictures.html img="1_kMsWQ7At7DM5eNqZt9QcQg" alt="Table 1: Reference Collapsing Rules" %}
+*Table 1: Reference Collapsing Rules*
 
 Reference collapsing is magic that enables Universal references to work. These rules are basically a logical AND of Lvalue ref implying ‘0’ (zero) with Rvalue ref implying ‘1’(one)
 
@@ -198,7 +200,8 @@ Reference collapsing is magic that enables Universal references to work. These r
 
 So basically in the above template examples of Univeral reference —
 
-![](/img/1_QNPrhEdAboP8AubgIxuhdg.webp)*Table 2: Reference Collapsing Rules for template Examples 1- 4*
+{% include pictures.html img="1_QNPrhEdAboP8AubgIxuhdg" alt="Table 2: Reference Collapsing Rules for template Examples 1- 4" %}
+*Table 2: Reference Collapsing Rules for template Examples 1- 4*
 
 Columns with color code orange here don’t have && for T. The reason behind that is —
 
@@ -276,7 +279,8 @@ void wrapper(T1& e1, T2& e2) {
 but what if we would want to pass rvalues also? What about const-ness?  
 As you see this will be an exponential problem. Brute force solution —
 
-![](/img/1_cnR_CDZLMixWJChrha8nLg.webp)*These are just lvalue versions, rvalue versions will also be needed*
+{% include pictures.html img="1_cnR_CDZLMixWJChrha8nLg" alt="These are just lvalue versions, rvalue versions will also be needed" %}
+*These are just lvalue versions, rvalue versions will also be needed*
 
 Hence there was a need for perfectly forwarding whatever parameter is received and that is achievable by Universal references.
 
@@ -350,7 +354,8 @@ For *decltype,* Type deduction rule is different.
 1. decltype(id) ⇒ id’s declared type.
 2. decltype(non-id lvalue expression) ⇒ Expression’s type, **Lvalue Ref (T&)**
 3. decltype(non-id rvalue expression) ⇒ Expression’s type, **Non-Ref (T)**
-![](/img/1_wBdb9YCnAO0VPvwqLWnbJA.webp)*decltype and Universal Reference*
+{% include pictures.html img="1_wBdb9YCnAO0VPvwqLWnbJA" alt="decltype and Universal Reference" %}
+*decltype and Universal Reference*
 
 ### Ultimate Truth
 
@@ -360,21 +365,25 @@ For *decltype,* Type deduction rule is different.
 
 What does `std::forward` do actually?
 
-![](/img/1_hLPj-EPcjNl2afshgBLaWw.webp)*Implementation of std::forward*
+{% include pictures.html img="1_hLPj-EPcjNl2afshgBLaWw" alt="Implementation of std::forward" %}
+*Implementation of std::forward*
 
 **Case 1:** passing lvalues sayint& , T is deduced as int&
 
-![](/img/1_p3CTuZ7DnDKASZlChPn3rg.webp)*Putting T as int&*
+{% include pictures.html img="1_p3CTuZ7DnDKASZlChPn3rg" alt="Putting T as int&" %}
+*Putting T as int&*
 
 After Reference collapsing, *std::forward* turns into this, which is as good as passing lvalue.
 
-![](/img/1_eMkkMxSVP01Aq-uzj1okmw.webp)*The final definition looks like this after Reference collapsing*
+{% include pictures.html img="1_eMkkMxSVP01Aq-uzj1okmw" alt="The final definition looks like this after Reference collapsing" %}
+*The final definition looks like this after Reference collapsing*
 
 **Case 2:** passing rvalues say *int&&* , T is deduced as int (Why? Read note mentioned after Table 2). 
 
 Now After applying T as int —
 
-![](/img/1_rqib7b-jjZtkHYHDf3neZg.webp)*The final definition looks like this after Reference collapsing*
+{% include pictures.html img="1_rqib7b-jjZtkHYHDf3neZg" alt="The final definition looks like this after Reference collapsing" %}
+*The final definition looks like this after Reference collapsing*
 
 *std::forward* could do the job without [std::remove\_reference](https://en.cppreference.com/w/cpp/types/remove_reference). Reference collapsing does the job already, so `std::remove_reference<T>` is superfluous.
 

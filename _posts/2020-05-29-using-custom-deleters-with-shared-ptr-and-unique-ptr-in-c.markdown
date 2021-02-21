@@ -3,13 +3,13 @@ layout:	post
 title:	"Using custom deleters with shared_ptr and unique_ptr in C++"
 date:	2020-05-29
 categories: [ 'C++' ]
-image: img/0*doMK1rnrcwhJmTks
+image: 0*doMK1rnrcwhJmTks
 author: admin
 ---
 
   How to use a custom deleter with an *unique_ptr* and *shared_ptr*
 
-![](/img/0*doMK1rnrcwhJmTks)
+{% include pictures.html img="0*doMK1rnrcwhJmTks" alt="" %}
 
 **Related post:** <https://medium.com/pranayaggarwal25/a-tale-of-two-allocations-f61aa0bf71fc>
 

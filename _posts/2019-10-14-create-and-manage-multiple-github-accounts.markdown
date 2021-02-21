@@ -4,13 +4,13 @@ title:	"Create and manage multiple GitHub accounts"
 description: "Do you have a personal and work Github account? This tutorials helps you use multiple github account on a single computer using SSH. let's say..."
 date:	2019-10-14
 categories: [ 'Git' ]
-image: 'img/0_kkcqnMF8wuVE-GaXT-r1Gg.webp'
+image: '0_kkcqnMF8wuVE-GaXT-r1Gg'
 author: admin
 ---
 
   Managing personal and professional Github Account simultaneously
 
-![](/img/0_kkcqnMF8wuVE-GaXT-r1Gg.webp)*Managing Git*
+{% include pictures.html img="0_kkcqnMF8wuVE-GaXT-r1Gg" alt="Managing Git" %}*Managing Git*
 
 Say you have a personal [GitHub](https://github.com/) account, everything is working perfectly fine. For managing the coexistence of your professional account ([enterprise Github](https://github.com/enterprise)) and your personal account, you would need to have the ability to push and pull to multiple accounts.
 

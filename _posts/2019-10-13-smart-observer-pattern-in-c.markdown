@@ -4,14 +4,13 @@ title:	"Smart Observer Pattern in C++"
 description: "Event dispatcher helps to communicate across different components in an architecture. This tutorials shared an advanced architecture for event dispatcher which handles life time of event in an multithreaded environment. Let's look into..."
 date:	2019-10-13
 categories: [ 'C++' ]
-image: 'img/0*5TpHrNqaemC7yh-U'
+image: '0*5TpHrNqaemC7yh-U'
 tags: [ featured ]
 author: admin
 ---
 
   smarter pub-sub A better event dispatcher
-
-![](/img/0*5TpHrNqaemC7yh-U)*Photo by Fotis Fotopouloson unsplash.com*
+  {% include pictures.html img="0*5TpHrNqaemC7yh-U" alt="" %}*Photo by Fotis Fotopouloson unsplash.com*
 
 ***
 
@@ -28,15 +27,16 @@ author: admin
 1. This can be prevented by the subject holding weak references to the observers, allowing them to be garbage collected as normal without needing to be unregistered.
 2. Thus the idea is to keep only the *std::weak\_ptr* in event dispatcher and do the **(lazy) cleanup on event invocation**.
 3. Probably something along the lines of -
-![](/img/1_CT7cfFrVE4Wg5cWPYnbKSQ.webp)*Approxmiate event dispatcher: common resolution mechanism*
+{% include pictures.html img="1_CT7cfFrVE4Wg5cWPYnbKSQ" alt="Approxmiate event dispatcher: common resolution mechanism" %}*Approxmiate event dispatcher: common resolution mechanism*
 
 4. And a simple notifier would look something like this
 
-![](/img/1_mL3H3spS721BbA0B2bBuNw.webp)*Sample Notifier for the event dispatcher*
+{% include pictures.html img="1_mL3H3spS721BbA0B2bBuNw" alt="Sample Notifier for the event dispatcher" %}*Sample Notifier for the event dispatcher*
 
 OR we can opt for the classic “erase and update” using iterator based loop and merge these two loop operation(s).
 
-> There is an issue with this approach, what’s that?![](/img/1_3zb5di6F074tfgGhQ_Q1-w.webp)*What seems to be the problem?*
+> There is an issue with this approach, what’s that?
+{% include pictures.html img="1_3zb5di6F074tfgGhQ_Q1-w" alt="What seems to be the problem?" %}*What seems to be the problem?*
 
 ***
 
@@ -46,7 +46,7 @@ OR we can opt for the classic “erase and update” using iterator based loop a
 
 1. Adding or removing observers? => Bad (**includes crashes**!)
 2. Blocking the action of another thread, who blocks on trying to add an observer? => Bad (**deadlocks**!)
-![](/img/1_IQoHqec3aVyY9i84tytCYQ.webp)*Noooooo* 
+{% include pictures.html img="1_IQoHqec3aVyY9i84tytCYQ" alt="Noooooo" %}*Noooooo* 
 
 Basically the problem is with **Reentrancy** here.
 
@@ -61,7 +61,7 @@ Basically the problem is with **Reentrancy** here.
 
 After this fix, a notifier would roughly look something like -
 
-![](/img/1_MKc-QgKtFgeZsAPZv9c0Gg.webp)*Copy And Broadcast mechanism*
+{% include pictures.html img="1_MKc-QgKtFgeZsAPZv9c0Gg" alt="opy And Broadcast mechanism" %}*Copy And Broadcast mechanism*
 
 ***
 

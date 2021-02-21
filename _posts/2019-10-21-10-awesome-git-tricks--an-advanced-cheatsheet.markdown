@@ -4,13 +4,14 @@ title:	"10 Awesome Git Tricks: An advanced cheatsheet"
 description: "Looking for your ultimate Git cheatsheet? We have compiled for you the most used advanced Git cheat sheet and best practices, that can make you 10x faster. Let's dive into it..."
 date:	2019-10-21
 categories: [ 'Git' ]
-image: 'img/0*wASU3bLLfLP3ve7L'
+image: '0*wASU3bLLfLP3ve7L'
 author: admin
 ---
 
   Commit, Branching, Refs, Checkouts, push and pulls
 
-![](/img/0*wASU3bLLfLP3ve7L)*Photo by Yancy Min on Unsplash*
+{% include pictures.html img="0*wASU3bLLfLP3ve7L" alt="" %}
+*Photo by Yancy Min on Unsplash*
 
 ***
 ### Table of Contents
@@ -74,7 +75,7 @@ No matter how hard as you try to avoid it, sometimes *git push --force* to overw
 
 One of the hazards with force pushes happens when somebody else has made changes on top of the same branch in the remote copy of the repository. When you force-push your rewritten history, those commits will be lost.
 
-![](/img/0_Lqu7mVfSeMU_GGFx.webp)
+{% include pictures.html img="0_Lqu7mVfSeMU_GGFx" alt="" %}
 This is where the following option comes in, it will not allow you to force-push if the remote branch has been updated, which will ensure you don't throw away someone else's work. Ain’t it nice?
 
 *git push --force-with-lease*
@@ -144,7 +145,7 @@ Delete branch locally and on remote
   git push <remote_name> --delete <branch_name>
 ```
 
-![](/img/0_jEADYPXfqHA2p14B.webp)*Delete remote branch*
+{% include pictures.html img="0_jEADYPXfqHA2p14B" alt="Delete remote branch" %}*Delete remote branch*
 
 ***
 

@@ -101,7 +101,7 @@ li > a {
     text-underline-offset: 10%;
 }
 
-div.image-zoom-wrapper + em, video + p > em, .vidWrapper + p > em  { 
+div.image-zoom-wrapper + em, video + p > em, .vidWrapper + p > em, picture + p > em  { 
 	text-align: center;
 	color: rgba(117, 117, 117, 1);
 	font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
