@@ -104,7 +104,7 @@ li > a {
 div.image-zoom-wrapper + em, video + p > em, .vidWrapper + p > em, picture + p > em  { 
 	text-align: center;
 	color: rgba(117, 117, 117, 1);
-	font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: tm-content-sans-serif-font , "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 70%;
     margin: auto;
     display: block;
@@ -288,8 +288,8 @@ p > em, li > em, h4 > em {
 }
 .navbar-brand {
 	margin-right:2rem;
-	font-size:1.55rem;
-    font-family:"Georgia","Times New Roman",serif;
+	font-size:2rem;
+    font-family: tm-content-sans-serif-font, "Georgia","Times New Roman",serif;
 }
 .dropdown-item {
 	font-weight:400;
@@ -744,15 +744,16 @@ footer {
     margin-top:10px;
 }
 article {
-	font-size:20px;
-	line-height:175%;
+	font-size:22px;
+	line-height:170%;
 	font-family:charter, Georgia, Cambria, "Times New Roman", Times, serif;
 	margin: 0 5%;
+	letter-spacing: -0.003em;
 }
 .article-headline {
     font-family: Georgia,Times,"Times New Roman",serif;
-    font-size: 3.2rem;
-    font-weight: 400;
+    font-size: 3rem;
+    font-weight: 500;
     line-height: 1.15;
     color: #222222;
 }
@@ -783,9 +784,9 @@ article:first-letter {
 	vertical-align:top;
 }
 article h1,article h2,article h3,article h4,article h5,article h6,article .h1,article .h2,article .h3,article .h4,article .h5,article .h6 {
-	margin-bottom:2rem;
+	margin-bottom:0.5rem;
 	margin-top:2rem;
-	font-weight:500;
+	font-weight:700;
 }
 .alertbar {
 	box-shadow:0 -3px 10px 0 rgba(0,0,0,.0785);
