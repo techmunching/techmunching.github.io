@@ -26,6 +26,10 @@ img {
 
 @media screen and (orientation:portrait) {
 
+	article {
+		font-size:1.1em;
+	}
+
 	.w-125-card {
 		object-fit:cover; 
 		width:125px;
@@ -41,6 +45,7 @@ img {
 	}
 }
 @media screen and (orientation:landscape) {
+
 	.w-125-card {
 		object-fit:cover; 
 		width:100% !important;
@@ -744,7 +749,6 @@ footer {
     margin-top:10px;
 }
 article {
-	font-size:22px;
 	line-height:170%;
 	font-family:charter, Georgia, Cambria, "Times New Roman", Times, serif;
 	margin: 0 5%;
@@ -854,6 +858,9 @@ article h1,article h2,article h3,article h4,article h5,article h6,article .h1,ar
 		line-height:20px !important;
 		width:20px !important;
 	}
+	article {
+		font-size:1.1rem;
+	}
 }
 @media (min-width:992px) {
 	.fixedsidebar {
@@ -875,6 +882,9 @@ article h1,article h2,article h3,article h4,article h5,article h6,article .h1,ar
 	.content-withfixedsidebar .navbar.fixed-top {
 		margin-left: 260px;
 	}
+	article {
+		font-size:1.15rem;
+	}
 }
 a.a2a_i, i.a2a_i, .a2a_menu a.a2a_i:visited, .a2a_menu a.a2a_more {
     font-size:13px !important;
@@ -891,7 +901,7 @@ div.a2a_full_footer {display:none;}
 		 font-size: 1.1rem; 
 	 }
 	 article {
-		 font-size:1.24rem;
+		 font-size:1.3rem;
 	 }
 	 .topfirstimage {
 		 height:280px !Important;
