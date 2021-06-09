@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Approaching System Design Methodically"
-description: "Guide to learn system design Methodically for interviews- The only system design 101 that you will need to go through.
+title: "Approaching System Design for Interviews Methodically"
+description: "Guide to learn system design Methodically for interviews - The only system design 101 that you will need to go through for your interviews
 The premium free course and template to answer any system design question — A definitive method to tackle any system design problem such as Design Youtube, URL shorterner, Instagram in a unique way. Learn and apply CAP theorem, scalability, latency, throughput as easy as it can be."
 date: 2021-04-24
-categories: ["System Design", "Programming"]
+categories: ["System Design", "Programming", "Interviews"]
 image: "photo-1614439007888-c8f7ae337eb1"
 tags: [featured]
 author: admin
