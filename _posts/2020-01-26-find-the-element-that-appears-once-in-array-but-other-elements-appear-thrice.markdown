@@ -43,6 +43,17 @@ How you ask — Well bitwise XOR is —
 
 ***
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4645456437849360"
+     data-ad-slot="6776234449"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ### Trick
 
 Now, in the current question — if we apply the above idea, it will not work because — we got to have every unique element appearing even number of times. So instead of getting the answer, we will end up getting XOR of all unique elements which isn’t exactly what we want.
@@ -59,6 +70,17 @@ So if at any point time,
 The final answer we want is the value present in “ones” — because, it holds the unique element.
 
 ***
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4645456437849360"
+     data-ad-slot="6776234449"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### Final Solution and explanation
 
